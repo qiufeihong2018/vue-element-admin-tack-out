@@ -1,6 +1,8 @@
 <template>
   <div class="login">
-    <div class="logo"><img src="../../assets/login_images/login-bg.jpeg" alt="logo"></div>
+    <div class="logo">
+      <img src="../../assets/login_images/login-bg.jpeg" alt="logo">
+    </div>
     <div class="container">
       <div class="title">
         <span>后台管理系统</span>
@@ -13,7 +15,7 @@
           <el-input type="password" v-model="ruleForm.pass" placeholder="密码" auto-complete="off"></el-input>
         </el-form-item>
         <el-form-item>
-          <el-button type="primary" @click="submitForm('ruleForm')">登录</el-button>
+          <el-button @click="submitForm('ruleForm')">登录</el-button>
         </el-form-item>
       </el-form>
     </div>
@@ -79,41 +81,45 @@
     width: 400px
     margin: 10% auto 0
     text-align: center
+
     .logo
       img
         width: 130px
         height: 130px
         background-color: #fff
         border-radius: 50%
+
     .container
-      width: 362px
+      width: 395px
       box-sizing: border-box
-      padding: 53px 41px 20px
+      padding: 42px 33px 31px
       margin: 60px auto 0
-      border: 1px solid #51d9ff
-      border-radius: 10px
-      background: rgba(6, 6, 123, 0.5)
+      border-radius: 50px
+      background: #fff
+
       .title
-        color: #51d9ff
+        color: #000000
         margin-bottom: 47px
-        font-size: 23px
+        font-size: 30px
         text-indent: 7px
         font-weight: bold
+
       .el-form
         margin-left: -95px
+
         .el-input
           margin-bottom: 10px
+
         .el-button
           margin-top: 8px
           width: 120px
           height: 50px
           font-size: 20px
-          background-color: #51d9ff
-          color: #06067b
-          font-weight: bold
+          background-color: #000000
+          color: #fff
           letter-spacing: 20px
           text-indent: 10px
-          border-radius: 5px
+          border-radius 10px
 
   .bg
     top: 0

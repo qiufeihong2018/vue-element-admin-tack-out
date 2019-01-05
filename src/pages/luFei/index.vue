@@ -1,6 +1,6 @@
 <template>
   <div>
-  路飞
+  lufei
   </div>
 </template>
 
