@@ -1,9 +1,9 @@
 <template>
   <div class="login">
-    <div class="logo"><img src="media/login-logo.png" alt="logo"></div>
+    <div class="logo"><img src="../../assets/login_images/login-bg.jpeg" alt="logo"></div>
     <div class="container">
       <div class="title">
-        <span>xx网络安全监控系统V 1.0</span>
+        <span>后台管理系统</span>
       </div>
       <el-form :model="ruleForm" status-icon ref="ruleForm" :rules="rules" class="demo-ruleForm" label-width="100px">
         <el-form-item prop="username">
@@ -125,6 +125,6 @@
     z-index: -1
     background-size: cover
     background-repeat: no-repeat
-    background-image: url(media/login-bg.jpg)
+    background-image: url(../../assets/login_images/login-bg.jpeg)
 
 </style>

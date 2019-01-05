@@ -9,78 +9,58 @@ const _import = file => () => import('@/pages/' + file + '.vue')
 
 export const constantRouterMap = [
   { path: '/login', component: _import('login/index'), hidden: true },
-  { path: '/404', component: _import('error-page/404'), hidden: true },
+  { path: '/404', component: _import('error/404'), hidden: true },
   {
     path: '/',
     component: Layout,
     hidden: true,
-    redirect: '/main'
+    redirect: '/lufei/index'
   },
   {
-    path: '/checkbox',
+    path: '/lufei',
     component: Layout,
     children: [
       {
         path: 'index',
-        name: 'checkbox',
-        component: _import('checkbox/index'),
-        meta: { title: 'checkbox', icon: 'example' }
+        name: 'lufei',
+        component: _import('luFei/index'),
+        meta: { title: 'lufei', icon: 'example' }
       }
     ]
   },
   {
-    path: '/main',
+    path: '/caomao',
     component: Layout,
-    children: [
-      {
-        path: 'hall',
-        name: 'hall',
-        component: _import('Management/hall'),
-        meta: { title: '管理大厅', icon: 'example' }
-      }
-    ]
-  },
-  {
-    path: '/functional',
-    component: Layout,
-    meta: { title: '功能中心', icon: 'example' },
-    children: [
-      {
-        path: 'center',
-        name: 'Function',
-        component: _import('Management/hall'),
-        meta: { title: '功能中心', icon: 'example' }
-      }
-    ]
-  },
-
-  {
-    path: '/extraction',
-    component: Layout,
-    redirect: '/extraction/single',
-    name: 'Extraction',
+    redirect: '/caomao/suolong',
+    name: 'caomao',
     meta: {
-      title: '文档抽取',
+      title: 'caomao',
       icon: 'nested'
     },
     children: [
       {
-        path: 'single',
-        name: 'Single',
-        component: _import('Management/hall'),
-        meta: { title: '单文件抽取', icon: 'form' }
+        path: 'suolong',
+        name: 'suolong',
+        component: _import('caomao/suolong'),
+        meta: { title: 'suolong', icon: 'form' }
       },
       {
-        path: 'multiple',
-        name: 'Multiple',
-        component: _import('Management/hall'),
-        meta: { title: '批量抽取', icon: 'form' }
+        path: 'qiaozhi',
+        name: 'qiaozhi',
+        component: _import('caomao/qiaozhi'),
+        meta: { title: 'qiaozhi', icon: 'form' }
       },
       {
-        path: 'scanned',
-        name: 'Scanned',
-        component: _import('Management/hall'),
-        meta: { title: '扫描件抽取', icon: 'form' }
+        path: 'qiaoba',
+        name: 'qiaoba',
+        component: _import('caomao/qiaoba'),
+        meta: { title: 'qiaoba', icon: 'form' }
+      },
+      {
+        path: 'namei',
+        name: 'namei',
+        component: _import('caomao/namei'),
+        meta: { title: 'namei', icon: 'form' }
       }
     ]
   },
