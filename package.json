@@ -1,10 +1,9 @@
 {
-  "name": "vue2-manage",
-  "version": "1.0.1",
-  "description": "vue2-manage",
-  "author": "cangdu <1264889788@qq.com>",
-  "license": "GPL",
-  "private": true,
+    "name": "vue-element-admin-tack-out",
+    "version": "1.0.0",
+    "description": "a vue+element back-stage management template back-stage management  menagement ",
+    "author": "qiufeihong <qiufeihong2018@126.com>",
+    "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=online node build/dev-server.js",
     "local": "cross-env NODE_ENV=local node build/dev-server.js",
