@@ -3,35 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2bb06346-a6b8-43bb-8931-047cf090fb0d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/manage/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/css/app.85873a69abe58e3fc37a13d571ef59e2.css" beforeDir="false" afterPath="$PROJECT_DIR$/manage/static/css/app.85873a69abe58e3fc37a13d571ef59e2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/0.dea7087f7a00b4016329.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/1.4b6299d2e3b0bc5dca41.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/10.3e8f9c037e5098ffaf76.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/11.ef8e6cb57a82667e3714.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/12.612d5902ed752548341e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/13.501e23458a33450b0c0e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/14.689ee50eed49edbde8f9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/15.8c1687e8ba9642bcad71.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/16.bc21dfb9de933f156bbb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/2.5f437a7efe16a33fe1e4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/3.28b469892221efe4a939.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/4.bb2dfef4dcd1278529af.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/5.49463e850f79a28d720f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/6.7dc76f41f558da8b23ac.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/7.9a00e892a62825f83555.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/8.5be44c5602c67d88fff7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/9.a3d33a7086a2486cd05a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/app.e0a31587e6a57da7a5c1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/manifest.dcee10e3d0ac2ad34379.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage/static/js/vendor.22faa6a1913df07d3952.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/explain.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/explain.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/manage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/manage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/sendMessage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/uploadImg.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/vueEdit.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -238,18 +209,17 @@
       <updated>1548515084056</updated>
       <workItem from="1548515089044" duration="361000" />
       <workItem from="1548593863903" duration="1469000" />
-      <workItem from="1548595384938" duration="4333000" />
+      <workItem from="1548595384938" duration="4804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6163000" />
+    <option name="totallyTimeSpent" value="6634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -258,7 +228,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2859116" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2859116" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
