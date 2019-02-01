@@ -1,15 +1,20 @@
 <template>
-    <div class="index">
-        <div class="map flex-1" ref="map" style="width:100%;height:100%"></div>
+    <div class="fillcontain">
+        <HeadTop/>
+        <div class="map flex-1" ref="map" style="width:100%;height:100%;"></div>
     </div>
 </template>
 
 <script>
     import inMap from "inmap"
     import data from "../../static/point";
+    import HeadTop from '@/components/headTop'
 
     export default {
         methods: {},
+        components: {
+            HeadTop
+        },
         mounted() {
             var inmap = new inMap.Map({
                 id: this.$refs.map,
@@ -44,9 +49,8 @@
     };
 </script>
 
-<style scoped>
-    .index {
-       width: 500px;
-        height: 500px;
-    }
+<style lang="less">
+    @import '../style/mixin';
+
+
 </style>
