@@ -1,9 +1,9 @@
 {
-    "name": "vue-element-admin-tack-out",
-    "version": "1.0.0",
-    "description": "a vue+element back-stage management template back-stage management  menagement ",
-    "author": "qiufeihong <qiufeihong2018@126.com>",
-    "private": true,
+  "name": "vue-element-admin-tack-out",
+  "version": "1.0.0",
+  "description": "a vue+element back-stage management template back-stage management  menagement ",
+  "author": "qiufeihong <qiufeihong2018@126.com>",
+  "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=online node build/dev-server.js",
     "local": "cross-env NODE_ENV=local node build/dev-server.js",
@@ -16,6 +16,9 @@
   "dependencies": {
     "echarts": "^3.5.4",
     "element-ui": "^1.2.9",
+    "inmap": "^2.2.4",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
     "time-formater": "^1.0.1",
     "vue": "^2.2.6",
     "vue-quill-editor": "^2.2.1",
@@ -43,7 +46,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^4.0.0",
     "cross-spawn": "^5.0.1",
-    "css-loader": "^0.28.0",
+    "css-loader": "^0.28.11",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^6.2.1",
     "eslint-friendly-formatter": "^2.0.7",
