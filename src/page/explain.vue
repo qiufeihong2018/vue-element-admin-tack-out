@@ -1,6 +1,6 @@
 <template>
     <div class="fillcontain">
-        <head-top></head-top>
+        <HeadTop></HeadTop>
         <p class="explain_text">后台管理系统</p>
         <p class="explain_text">第一次登录的用户自动注册成为普通管理员</p>
         <p class="explain_text">普通管理员可以添加，修改信息</p>
@@ -10,10 +10,10 @@
 </template>
 
 <script>
-	import headTop from '../components/headTop'
+	import HeadTop from '../components/HeadTop'
     export default {
     	components: {
-    		headTop,
+    		HeadTop,
     	},
     }
 </script>

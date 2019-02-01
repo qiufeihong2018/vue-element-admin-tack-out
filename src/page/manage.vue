@@ -21,6 +21,10 @@
                         <template slot="title"><i class="el-icon-star-on"></i>图表</template>
                         <el-menu-item index="visitor">用户分布</el-menu-item>
                         <el-menu-item index="map">地图</el-menu-item>
+                        <el-menu-item index="merchants">商家分布</el-menu-item>
+                        <el-menu-item index="food">食品分类</el-menu-item>
+                        <el-menu-item index="menu">订单分布</el-menu-item>
+                        <el-menu-item index="admin">管理员分布</el-menu-item>
                     </el-submenu>
                     <el-submenu index="5">
                         <template slot="title"><i class="el-icon-setting"></i>设置</template>
@@ -55,8 +59,4 @@
 
 <style lang="less" scoped>
     @import '../style/mixin';
-
-    .manage_page {
-
-    }
 </style>

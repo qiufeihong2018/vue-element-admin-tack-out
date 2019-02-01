@@ -1,6 +1,6 @@
 <template>
     <div>
-     	<head-top></head-top>
+     	<HeadTop></HeadTop>
         <el-row style="margin-top: 20px;">
   			<el-col :span="14" :offset="4">
   				<header class="form_header">选择食品种类</header>
@@ -135,7 +135,7 @@
 </template>
 
 <script>
- 	import headTop from '@/components/headTop'
+ 	import HeadTop from '@/components/HeadTop'
     import {getCategory, addCategory, addFood} from '@/api/getData'
     import {baseUrl, baseImgPath} from '@/config/env'
     export default {
@@ -190,7 +190,7 @@
     		}
     	},
     	components: {
-    		headTop,
+    		HeadTop,
     	},
     	created(){
     		if (this.$route.query.restaurant_id) {

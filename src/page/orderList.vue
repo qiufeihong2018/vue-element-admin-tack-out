@@ -1,6 +1,6 @@
 <template>
     <div class="fillcontain">
-        <head-top></head-top>
+        <HeadTop></HeadTop>
         <div class="table_container">
             <el-table
 			    :data="tableData"
@@ -57,7 +57,7 @@
 </template>
 
 <script>
-    import headTop from '../components/headTop'
+    import HeadTop from '../components/HeadTop'
     import {getOrderList, getOrderCount, getResturantDetail, getUserInfo, getAddressById} from '@/api/getData'
     export default {
         data(){
@@ -73,7 +73,7 @@
             }
         },
     	components: {
-    		headTop,
+    		HeadTop,
     	},
         created(){
         	this.restaurant_id = this.$route.query.restaurant_id;

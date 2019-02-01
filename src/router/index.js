@@ -15,6 +15,12 @@ const orderList = r => require.ensure([], () => r(require('@/page/orderList')), 
 const adminList = r => require.ensure([], () => r(require('@/page/adminList')), 'adminList');
 const visitor = r => require.ensure([], () => r(require('@/page/visitor')), 'visitor');
 const map = r => require.ensure([], () => r(require('@/page/map')), 'map')
+const merchants = r => require.ensure([], () => r(require('@/page/merchants')), 'merchants')
+const food = r => require.ensure([], () => r(require('@/page/food')), 'food')
+const menu = r => require.ensure([], () => r(require('@/page/menu')), 'menu')
+const admin = r => require.ensure([], () => r(require('@/page/admin')), 'admin')
+
+
 const newMember = r => require.ensure([], () => r(require('@/page/newMember')), 'newMember');
 const adminSet = r => require.ensure([], () => r(require('@/page/adminSet')), 'adminSet');
 const explain = r => require.ensure([], () => r(require('@/page/explain')), 'explain');
@@ -67,11 +73,27 @@ const routes = [
         }, {
             path: '/map',
             component: map,
-            meta: ['图表', '地图'],
+            meta: ['图表', '地图']
+        }, {
+            path: '/merchants',
+            component: merchants,
+            meta: ['图表', '商家分布']
         }, {
             path: '/newMember',
             component: newMember,
             meta: ['图表', '用户数据'],
+        }, {
+            path: '/food',
+            component: food,
+            meta: ['图表', '食品分类']
+        }, {
+            path: '/menu',
+            component: menu,
+            meta: ['图表', '订单分布']
+        }, {
+            path: '/admin',
+            component: admin,
+            meta: ['图表', '管理员分布']
         }, {
             path: '/adminSet',
             component: adminSet,

@@ -1,12 +1,12 @@
 <template>
     <div>
-        <head-top></head-top>
+        <HeadTop></HeadTop>
         <visitor-pie :pieData="pieData"></visitor-pie>
     </div>
 </template>
 
 <script>
-	import headTop from '../components/headTop'
+	import HeadTop from '../components/HeadTop'
     import visitorPie from '@/components/visitorPie'
 	import {getUserCity} from '@/api/getData'
     export default {
@@ -16,7 +16,7 @@
     		}
     	},
     	components: {
-    		headTop,
+    		HeadTop,
             visitorPie,
     	},
     	mounted(){
@@ -41,5 +41,5 @@
 
 <style lang="less">
 	@import '../style/mixin';
-	
+
 </style>

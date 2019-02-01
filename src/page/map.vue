@@ -8,7 +8,7 @@
 <script>
     import inMap from "inmap"
     import data from "../../static/point";
-    import HeadTop from '@/components/headTop'
+    import HeadTop from '@/components/HeadTop'
 
     export default {
         methods: {},

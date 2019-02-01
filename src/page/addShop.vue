@@ -1,6 +1,6 @@
 <template>
     <div>
-        <head-top></head-top>
+        <HeadTop></HeadTop>
         <el-row style="margin-top: 20px;">
   			<el-col :span="12" :offset="4">
 		        <el-form :model="formData" :rules="rules" ref="formData" label-width="110px" class="demo-formData">
@@ -163,7 +163,7 @@
 </template>
 
 <script>
-    import headTop from '@/components/headTop'
+    import HeadTop from '@/components/HeadTop'
     import {cityGuess, addShop, searchplace, foodCategory} from '@/api/getData'
     import {baseUrl, baseImgPath} from '@/config/env'
     export default {
@@ -231,7 +231,7 @@
     		}
     	},
     	components: {
-    		headTop,
+    		HeadTop,
     	},
     	mounted(){
     		this.initData();
