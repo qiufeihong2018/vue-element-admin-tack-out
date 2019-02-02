@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2bb06346-a6b8-43bb-8931-047cf090fb0d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/js/12.76ad8a620858ad2b78fb.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/js/12.76ad8a620858ad2b78fb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/static/js/app.e61b970c439741d947f6.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/static/js/app.e61b970c439741d947f6.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/getData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/getData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/addGoods.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/addGoods.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/adminList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/adminManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/foodList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/foodManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/manage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/manage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/orderList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/orderMange.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/shopList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/shopManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/userList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/userManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/home.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,11 +17,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="manage.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/page/home.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="121" selection-start-line="121" selection-end-line="121" />
+              <folding>
+                <element signature="n#el-row#0;n#section#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#el-row#1;n#section#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="e#1325#1368#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/router/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="36" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/page/manage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="11" column="69" lean-forward="true" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
+            <state relative-caret-position="-1607">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -59,9 +75,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>elm</find>
-      <find>login</find>
-      <find>eidt</find>
       <find>sendMessage</find>
       <find>uploadImg</find>
       <find>newMember</find>
@@ -85,6 +98,13 @@
       <find>orderList</find>
       <find>foodList</find>
       <find>adminList</find>
+      <find>数据统计</find>
+      <find>tendency</find>
+      <find>userCount</find>
+      <find>section_title</find>
+      <find>data_list</find>
+      <find>data_section</find>
+      <find>margin-left</find>
     </findStrings>
     <replaceStrings>
       <replace>dist</replace>
@@ -120,11 +140,12 @@
         <option value="$PROJECT_DIR$/src/page/map.vue" />
         <option value="$PROJECT_DIR$/src/page/merchants.vue" />
         <option value="$PROJECT_DIR$/src/page/visitor.vue" />
-        <option value="$PROJECT_DIR$/src/router/index.js" />
         <option value="$PROJECT_DIR$/src/page/food.vue" />
         <option value="$PROJECT_DIR$/src/page/admin.vue" />
         <option value="$PROJECT_DIR$/src/page/menu.vue" />
         <option value="$PROJECT_DIR$/src/page/manage.vue" />
+        <option value="$PROJECT_DIR$/src/router/index.js" />
+        <option value="$PROJECT_DIR$/src/page/home.vue" />
       </list>
     </option>
   </component>
@@ -277,18 +298,18 @@
       <workItem from="1548593863903" duration="1469000" />
       <workItem from="1548595384938" duration="4804000" />
       <workItem from="1548687002424" duration="2468000" />
-      <workItem from="1549096193130" duration="3101000" />
+      <workItem from="1549096193130" duration="4774000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16074000" />
+    <option name="totallyTimeSpent" value="17747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -297,7 +318,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2845304" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2845304" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -459,9 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/home.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/page/addGoods.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -542,16 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2350">
-          <caret line="95" column="29" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/page/food.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -585,8 +593,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/manage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="11" column="69" lean-forward="true" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
+        <state relative-caret-position="-1607">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="36" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
+          <folding>
+            <element signature="n#el-row#0;n#section#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#el-row#1;n#section#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="e#1325#1368#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
