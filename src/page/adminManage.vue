@@ -41,7 +41,7 @@
 
 <script>
     import HeadTop from '../components/HeadTop'
-    import {adminList, adminCount} from '@/api/getData'
+    import {adminManage, adminCount} from '@/api/getData'
     export default {
         data(){
             return {
@@ -83,7 +83,7 @@
             },
             async getAdmin(){
                 try{
-                    const res = await adminList({offset: this.offset, limit: this.limit});
+                    const res = await adminManage({offset: this.offset, limit: this.limit});
                     if (res.status == 1) {
                     	this.tableData = [];
                     	res.data.forEach(item => {

@@ -6,11 +6,11 @@
                     <el-menu-item index="manage"><i class="el-icon-menu"/>首页</el-menu-item>
                     <el-submenu index="2">
                         <template slot="title"><i class="el-icon-document"/>数据管理</template>
-                        <el-menu-item index="userList">买家管理</el-menu-item>
-                        <el-menu-item index="shopList">卖家管理</el-menu-item>
-                        <el-menu-item index="foodList">菜单管理</el-menu-item>
-                        <el-menu-item index="orderList">订单管理</el-menu-item>
-                        <el-menu-item index="adminList">管理员管理</el-menu-item>
+                        <el-menu-item index="userManage">买家管理</el-menu-item>
+                        <el-menu-item index="shopManage">卖家管理</el-menu-item>
+                        <el-menu-item index="foodManage">菜单管理</el-menu-item>
+                        <el-menu-item index="orderMange">订单管理</el-menu-item>
+                        <el-menu-item index="adminManage">管理员管理</el-menu-item>
                     </el-submenu>
                     <el-submenu index="3">
                         <template slot="title"><i class="el-icon-plus"/>添加数据</template>

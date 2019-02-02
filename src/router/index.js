@@ -8,11 +8,11 @@ const manage = r => require.ensure([], () => r(require('@/page/manage')), 'manag
 const home = r => require.ensure([], () => r(require('@/page/home')), 'home');
 const addShop = r => require.ensure([], () => r(require('@/page/addShop')), 'addShop');
 const addGoods = r => require.ensure([], () => r(require('@/page/addGoods')), 'addGoods');
-const userList = r => require.ensure([], () => r(require('@/page/userList')), 'userList');
-const shopList = r => require.ensure([], () => r(require('@/page/shopList')), 'shopList');
-const foodList = r => require.ensure([], () => r(require('@/page/foodList')), 'foodList');
-const orderList = r => require.ensure([], () => r(require('@/page/orderList')), 'orderList');
-const adminList = r => require.ensure([], () => r(require('@/page/adminList')), 'adminList');
+const userManage = r => require.ensure([], () => r(require('@/page/userManage')), 'userManage');
+const shopManage = r => require.ensure([], () => r(require('@/page/shopManage')), 'shopManage');
+const foodManage = r => require.ensure([], () => r(require('@/page/foodManage')), 'foodManage');
+const orderMange = r => require.ensure([], () => r(require('@/page/orderMange')), 'orderMange');
+const adminManage = r => require.ensure([], () => r(require('@/page/adminManage')), 'adminManage');
 const visitor = r => require.ensure([], () => r(require('@/page/visitor')), 'visitor');
 const map = r => require.ensure([], () => r(require('@/page/map')), 'map')
 const merchants = r => require.ensure([], () => r(require('@/page/merchants')), 'merchants')
@@ -47,24 +47,24 @@ const routes = [
             component: addGoods,
             meta: ['添加数据', '添加商品'],
         }, {
-            path: '/userList',
-            component: userList,
+            path: '/userManage',
+            component: userManage,
             meta: ['数据管理', '买家管理'],
         }, {
-            path: '/shopList',
-            component: shopList,
+            path: '/shopManage',
+            component: shopManage,
             meta: ['数据管理', '卖家管理'],
         }, {
-            path: '/foodList',
-            component: foodList,
+            path: '/foodManage',
+            component: foodManage,
             meta: ['数据管理', '菜单管理'],
         }, {
-            path: '/orderList',
-            component: orderList,
+            path: '/orderMange',
+            component: orderMange,
             meta: ['数据管理', '订单管理'],
         }, {
-            path: '/adminList',
-            component: adminList,
+            path: '/adminManage',
+            component: adminManage,
             meta: ['数据管理', '管理员管理'],
         }, {
             path: '/visitor',

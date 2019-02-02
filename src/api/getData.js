@@ -60,7 +60,7 @@ export const adminDayCount = date => fetch('/statis/admin/' + date + '/count');
  * 管理员列表
  */
 
-export const adminList = data => fetch('/admin/all', data);
+export const adminManage = data => fetch('/admin/all', data);
 
 /**
  * 管理员数量
