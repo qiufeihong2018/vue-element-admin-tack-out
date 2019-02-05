@@ -8,23 +8,23 @@
                         <template slot="title"><i class="el-icon-document"/>数据管理</template>
                         <el-menu-item index="userManage">买家管理</el-menu-item>
                         <el-menu-item index="shopManage">卖家管理</el-menu-item>
-                        <el-menu-item index="foodManage">菜单管理</el-menu-item>
+                        <el-menu-item index="foodManage">商品管理</el-menu-item>
                         <el-menu-item index="orderMange">订单管理</el-menu-item>
                         <el-menu-item index="adminManage">管理员管理</el-menu-item>
                     </el-submenu>
                     <el-submenu index="3">
                         <template slot="title"><i class="el-icon-plus"/>添加数据</template>
-                        <el-menu-item index="addShop">添加商铺</el-menu-item>
+                        <el-menu-item index="addShop">添加卖家</el-menu-item>
                         <el-menu-item index="addGoods">添加商品</el-menu-item>
                     </el-submenu>
                     <el-submenu index="4">
                         <template slot="title"><i class="el-icon-star-on"/>图表</template>
-                        <el-menu-item index="visitor">用户分布</el-menu-item>
-                        <el-menu-item index="map">地图</el-menu-item>
-                        <el-menu-item index="merchants">商家分布</el-menu-item>
-                        <el-menu-item index="food">食品分类</el-menu-item>
+                        <el-menu-item index="visitor">买家分布</el-menu-item>
+                        <el-menu-item index="merchants">卖家分布</el-menu-item>
+                        <el-menu-item index="food">商品分类</el-menu-item>
                         <el-menu-item index="menu">订单分布</el-menu-item>
                         <el-menu-item index="admin">管理员分布</el-menu-item>
+                        <el-menu-item index="map">地图</el-menu-item>
                     </el-submenu>
                     <el-submenu index="5">
                         <template slot="title"><i class="el-icon-setting"/>设置</template>
