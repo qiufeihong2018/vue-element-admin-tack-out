@@ -42,7 +42,8 @@
                         title: {
                             text: '买家分布',
                             subtext: '',
-                            x: 'center'
+                            x: 'center',
+                            top:'20%'
                         },
                         tooltip: {
                             trigger: 'item',
