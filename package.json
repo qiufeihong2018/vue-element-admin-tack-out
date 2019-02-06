@@ -14,9 +14,11 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
-    "echarts": "^3.5.4",
+    "axios": "^0.18.0",
+    "echarts": "^3.8.5",
     "element-ui": "^1.2.9",
     "inmap": "^2.2.4",
+    "js-cookie": "^2.2.0",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "time-formater": "^1.0.1",

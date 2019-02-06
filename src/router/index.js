@@ -13,14 +13,12 @@ const shopManage = r => require.ensure([], () => r(require('@/page/shopManage'))
 const foodManage = r => require.ensure([], () => r(require('@/page/foodManage')), 'foodManage');
 const orderMange = r => require.ensure([], () => r(require('@/page/orderMange')), 'orderMange');
 const adminManage = r => require.ensure([], () => r(require('@/page/adminManage')), 'adminManage');
-const visitor = r => require.ensure([], () => r(require('@/page/visitor')), 'visitor');
+const visitor = r => require.ensure([], () => r(require('@/page/user')), 'visitor');
 const map = r => require.ensure([], () => r(require('@/page/map')), 'map')
 const merchants = r => require.ensure([], () => r(require('@/page/merchants')), 'merchants')
 const food = r => require.ensure([], () => r(require('@/page/food')), 'food')
 const menu = r => require.ensure([], () => r(require('@/page/menu')), 'menu')
 const admin = r => require.ensure([], () => r(require('@/page/admin')), 'admin')
-
-
 const newMember = r => require.ensure([], () => r(require('@/page/newMember')), 'newMember');
 const adminSet = r => require.ensure([], () => r(require('@/page/adminSet')), 'adminSet');
 const explain = r => require.ensure([], () => r(require('@/page/explain')), 'explain');
