@@ -1,16 +1,18 @@
 <template>
     <div>
         <HeadTop></HeadTop>
+        <FoodPie></FoodPie>
     </div>
 </template>
 
 <script>
     import HeadTop from '../components/HeadTop'
-
+    import FoodPie from '../components/Charts/foodPie'
     export default {
         name: "food",
         components: {
-            HeadTop
+            HeadTop,
+            FoodPie
         }
     }
 </script>
