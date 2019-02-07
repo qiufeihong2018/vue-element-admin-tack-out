@@ -51,7 +51,7 @@
                     },
                     series: [
                         {
-                            name: '买家来源',
+                            name: '卖家来源',
                             type: 'pie',
                             radius: '55%',
                             center: ['50%', '60%'],

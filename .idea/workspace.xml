@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bb06346-a6b8-43bb-8931-047cf090fb0d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Charts/foodPie.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Charts/adminPie.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Charts/menuPie.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/addGoods.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/addGoods.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/food.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/food.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Charts/merchantsPie.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Charts/merchantsPie.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/admin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/admin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/menu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/menu.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,11 +30,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="food.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/page/food.vue">
+      <file leaf-file-name="admin.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/admin.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+              <caret line="3" column="18" selection-end-line="23" />
+              <folding>
+                <element signature="e#86#129#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adminPie.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Charts/adminPie.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-459">
+              <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="food.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/food.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
               <folding>
                 <element signature="e#86#129#0" expanded="true" />
               </folding>
@@ -61,6 +84,27 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="menu.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/menu.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="17" selection-end-line="23" />
+              <folding>
+                <element signature="e#86#129#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menuPie.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Charts/menuPie.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="merchants.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/page/merchants.vue">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="merchantsPie.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="merchantsPie.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Charts/merchantsPie.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="18" column="35" selection-end-line="84" />
+            <state relative-caret-position="225">
+              <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -158,8 +202,6 @@
         <option value="$PROJECT_DIR$/src/components/headTop.vue" />
         <option value="$PROJECT_DIR$/src/layouts/layout/components/Sidebar/Item.vue" />
         <option value="$PROJECT_DIR$/src/page/map.vue" />
-        <option value="$PROJECT_DIR$/src/page/admin.vue" />
-        <option value="$PROJECT_DIR$/src/page/menu.vue" />
         <option value="$PROJECT_DIR$/src/page/home.vue" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/config/index.js" />
@@ -177,11 +219,15 @@
         <option value="$PROJECT_DIR$/src/api/getData.js" />
         <option value="$PROJECT_DIR$/src/api/echarts.js" />
         <option value="$PROJECT_DIR$/src/components/Charts/userPie.vue" />
-        <option value="$PROJECT_DIR$/src/components/Charts/merchantsPie.vue" />
         <option value="$PROJECT_DIR$/src/page/merchants.vue" />
         <option value="$PROJECT_DIR$/src/page/addGoods.vue" />
         <option value="$PROJECT_DIR$/src/components/Charts/foodPie.vue" />
         <option value="$PROJECT_DIR$/src/page/food.vue" />
+        <option value="$PROJECT_DIR$/src/components/Charts/menuPie.vue" />
+        <option value="$PROJECT_DIR$/src/page/menu.vue" />
+        <option value="$PROJECT_DIR$/src/components/Charts/adminPie.vue" />
+        <option value="$PROJECT_DIR$/src/page/admin.vue" />
+        <option value="$PROJECT_DIR$/src/components/Charts/merchantsPie.vue" />
       </list>
     </option>
   </component>
@@ -338,12 +384,12 @@
       <workItem from="1549354148754" duration="1317000" />
       <workItem from="1549363507529" duration="58000" />
       <workItem from="1549449596372" duration="9765000" />
-      <workItem from="1549523462549" duration="2425000" />
+      <workItem from="1549523462549" duration="3019000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36679000" />
+    <option name="totallyTimeSpent" value="37273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -381,30 +427,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/page/map.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.postcssrc.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -654,13 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Charts/merchantsPie.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="18" column="35" selection-end-line="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/page/merchants.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -697,11 +712,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/food.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="125">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
           <folding>
             <element signature="e#86#129#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Charts/menuPie.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/menu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="17" selection-end-line="23" />
+          <folding>
+            <element signature="e#86#129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Charts/adminPie.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/admin.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="18" selection-end-line="23" />
+          <folding>
+            <element signature="e#86#129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Charts/merchantsPie.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
         </state>
       </provider>
     </entry>
