@@ -4,32 +4,32 @@
         <section class="data_section">
             <header class="section_title">数据统计</header>
             <el-row :gutter="20">
-                <el-col :span="4">
-                    <div class="data_list today_head"><span class="data_num head">当日数据：</span></div>
+                <el-col :span="6">
+                    <div class="data-header today_head">当日数据</div>
                 </el-col>
-                <el-col :span="4">
+                <el-col :span="6">
                     <div class="data_list">
-                        新增用户: <span class="data_num">{{userCount}}</span></div>
+                        新增买家: <span class="data_num">{{userCount}}</span></div>
                 </el-col>
-                <el-col :span="4">
+                <el-col :span="6">
                     <div class="data_list"> 新增订单:<span class="data_num">{{orderCount}}</span></div>
                 </el-col>
-                <el-col :span="4">
+                <el-col :span="6">
                     <div class="data_list"> 新增管理员:
                         <span class="data_num">{{adminCount}}</span></div>
                 </el-col>
             </el-row>
             <el-row :gutter="20">
-                <el-col :span="4">
-                    <div class="data_list all_head"><span class="data_num head">总数据：</span></div>
+                <el-col :span="6">
+                    <div class="data-header all_head">总数据</div>
                 </el-col>
-                <el-col :span="4">
-                    <div class="data_list"> 注册用户：<span class="data_num">{{allUserCount}}</span></div>
+                <el-col :span="6">
+                    <div class="data_list"> 注册买家：<span class="data_num">{{allUserCount}}</span></div>
                 </el-col>
-                <el-col :span="4">
+                <el-col :span="6">
                     <div class="data_list"> 订单：<span class="data_num">{{allOrderCount}}</span></div>
                 </el-col>
-                <el-col :span="4">
+                <el-col :span="6">
                     <div class="data_list"> 管理员：<span class="data_num">{{allAdminCount}}</span></div>
                 </el-col>
             </el-row>
@@ -122,30 +122,36 @@
         .section_title
             text-align center
             font-size 40px
+            font-family Helvetica Neue
 
         .el-row
             margin 10px
+            .el-col
+                border-radius 10px
 
         .data_list
             text-align center
-            font-size 14px
-            background #E5E9F2
-            height 20px
+            font-size 20px
+            background #EBEEF5
             padding 30px 10px
 
             .data_num
                 color #000000
-                font-size 16px
-            .head
-                border-radius 6px
-                font-size 22px
-                padding 4px 0
-                color #fff
-                display inline-block
+                font-size 20px
+
+        .data-header
+            text-align center
+            color #fff
+            font-size 30px
+            padding 22px 5px
+
 
         .today_head
             background #ff0000
 
+
         .all_head
             background #0214ff
+
+
 </style>
