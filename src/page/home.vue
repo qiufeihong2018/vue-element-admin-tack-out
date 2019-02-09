@@ -2,7 +2,7 @@
     <div>
         <HeadTop/>
         <section class="data_section">
-            <header class="section_title">{{sevenDay}}数据统计{{sevenDate}}</header>
+            <header class="section_title">数据统计</header>
             <el-row :gutter="20">
                 <el-col :span="6">
                     <div class="data-header today_head">当日数据</div>
@@ -42,17 +42,17 @@
     import HeadTop from '../components/HeadTop'
     import tendency from '../components/tendency'
     import dtime from 'time-formater'
-    import {userCount, orderCount, getUserCount, getOrderCount, adminDayCount, adminCount} from '@/api/getData'
+    import * as apiHome from '@/api/home'
 
     export default {
         data() {
             return {
-                userCount: null,
-                orderCount: null,
-                adminCount: null,
-                allUserCount: null,
-                allOrderCount: null,
-                allAdminCount: null,
+                userCount: '',
+                orderCount: '',
+                adminCount: '',
+                allUserCount: '',
+                allOrderCount: '',
+                allAdminCount: '',
                 sevenDay: [],
                 sevenDate: [[], [], []],
             }
@@ -74,8 +74,7 @@
         methods: {
             async initData() {
                 const today = dtime().format('YYYY-MM-DD')
-                Promise.all([userCount(today), orderCount(today), adminDayCount(today), getUserCount(), getOrderCount(), adminCount()])
-                    .then(res => {
+                Promise.all([apiHome.userCount(today), apiHome.orderCount(today), apiHome.adminDayCount(today), apiHome.getUserCount(), apiHome.getOrderCount(), apiHome.adminCount()]).then(res => {
                         this.userCount = res[0].count;
                         this.orderCount = res[1].count;
                         this.adminCount = res[2].count;
@@ -89,9 +88,9 @@
             async getSevenData() {
                 const apiArr = [[], [], []];
                 this.sevenDay.forEach(item => {
-                    apiArr[0].push(userCount(item))
-                    apiArr[1].push(orderCount(item))
-                    apiArr[2].push(adminDayCount(item))
+                    apiArr[0].push(apiHome.userCount(item))
+                    apiArr[1].push(apiHome.orderCount(item))
+                    apiArr[2].push(apiHome.adminDayCount(item))
                 })
                 const promiseArr = [...apiArr[0], ...apiArr[1], ...apiArr[2]]
                 Promise.all(promiseArr).then(res => {
@@ -146,10 +145,8 @@
             font-size 30px
             padding 22px 5px
 
-
         .today_head
             background #ff0000
-
 
         .all_head
             background #0214ff
