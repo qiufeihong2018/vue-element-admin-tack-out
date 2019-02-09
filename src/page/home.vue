@@ -2,7 +2,7 @@
     <div>
         <HeadTop/>
         <section class="data_section">
-            <header class="section_title">数据统计</header>
+            <header class="section_title">{{sevenDay}}数据统计{{sevenDate}}</header>
             <el-row :gutter="20">
                 <el-col :span="6">
                     <div class="data-header today_head">当日数据</div>
@@ -63,6 +63,7 @@
         },
         mounted() {
             this.initData();
+            // 一周的时间
             for (let i = 6; i > -1; i--) {
                 const date = dtime(new Date().getTime() - 86400000 * i).format('YYYY-MM-DD')
                 this.sevenDay.push(date)
