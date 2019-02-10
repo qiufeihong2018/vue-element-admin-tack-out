@@ -42,28 +42,30 @@
 <script>
     import HeadTop from '../components/HeadTop'
     import {getUserCount} from "@/api/home";
-    import {getUserList} from '@/api/getData'
+    import {getUserList} from '@/api/user'
 
     export default {
         data() {
             return {
-                tableData: [{
-                    registe_time: '2016-05-02',
-                    username: '王小虎',
-                    city: '上海市普陀区金沙江路 1518 弄'
-                }, {
-                    registe_time: '2016-05-04',
-                    username: '王小虎',
-                    city: '上海市普陀区金沙江路 1517 弄'
-                }, {
-                    registe_time: '2016-05-01',
-                    username: '王小虎',
-                    city: '上海市普陀区金沙江路 1519 弄'
-                }, {
-                    registe_time: '2016-05-03',
-                    username: '王小虎',
-                    city: '上海市普陀区金沙江路 1516 弄'
-                }],
+                tableData: [
+                    {
+                        registe_time: '2016-05-02',
+                        username: '王小虎',
+                        city: '上海市普陀区金沙江路 1518 弄'
+                    }, {
+                        registe_time: '2016-05-04',
+                        username: '王小虎',
+                        city: '上海市普陀区金沙江路 1517 弄'
+                    }, {
+                        registe_time: '2016-05-01',
+                        username: '王小虎',
+                        city: '上海市普陀区金沙江路 1519 弄'
+                    }, {
+                        registe_time: '2016-05-03',
+                        username: '王小虎',
+                        city: '上海市普陀区金沙江路 1516 弄'
+                    }
+                ],
                 currentRow: null,
                 offset: 0,
                 limit: 20,
@@ -121,3 +123,4 @@
         padding: 20px;
     }
 </style>
+
