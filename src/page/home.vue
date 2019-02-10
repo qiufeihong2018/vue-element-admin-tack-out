@@ -42,6 +42,7 @@
     import HeadTop from '../components/HeadTop'
     import tendency from '../components/tendency'
     import dtime from 'time-formater'
+    import * as apiUser from '@/api/user'
     import * as apiHome from '@/api/home'
 
     export default {
@@ -74,21 +75,21 @@
         methods: {
             async initData() {
                 const today = dtime().format('YYYY-MM-DD')
-                Promise.all([apiHome.userCount(today), apiHome.orderCount(today), apiHome.adminDayCount(today), apiHome.getUserCount(), apiHome.getOrderCount(), apiHome.adminCount()]).then(res => {
-                        this.userCount = res[0].count;
-                        this.orderCount = res[1].count;
-                        this.adminCount = res[2].count;
-                        this.allUserCount = res[3].count;
-                        this.allOrderCount = res[4].count;
-                        this.allAdminCount = res[5].count;
-                    }).catch(err => {
+                Promise.all([apiUser.userCount(today), apiHome.orderCount(today), apiHome.adminDayCount(today), apiUser.getUserCount(), apiHome.getOrderCount(), apiHome.adminCount()]).then(res => {
+                    this.userCount = res[0].count;
+                    this.orderCount = res[1].count;
+                    this.adminCount = res[2].count;
+                    this.allUserCount = res[3].count;
+                    this.allOrderCount = res[4].count;
+                    this.allAdminCount = res[5].count;
+                }).catch(err => {
                     console.log(err)
                 })
             },
             async getSevenData() {
                 const apiArr = [[], [], []];
                 this.sevenDay.forEach(item => {
-                    apiArr[0].push(apiHome.userCount(item))
+                    apiArr[0].push(apiUser.userCount(item))
                     apiArr[1].push(apiHome.orderCount(item))
                     apiArr[2].push(apiHome.adminDayCount(item))
                 })
