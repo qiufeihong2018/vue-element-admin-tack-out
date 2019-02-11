@@ -4,7 +4,6 @@
         <div class="table_container">
             <el-table
                 :data="tableData"
-                style="width: 100%"
                 :default-sort="{prop:'name',order:'desc'}">
                 <el-table-column type="expand">
                     <template slot-scope="props">

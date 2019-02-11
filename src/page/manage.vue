@@ -1,11 +1,11 @@
 <template>
     <div class="manage_page fillcontain">
         <el-row>
-            <el-col :span="4" class="el-col-left">
+            <el-col :span="3" class="el-col-left">
                 <el-menu :default-active="defaultActive" theme="dark" router>
                     <el-menu-item index="manage"><i class="el-icon-menu"/>首页</el-menu-item>
                     <el-submenu index="2">
-                        <template slot="title"><i class="el-icon-document"/>数据管理</template>
+                        <template slot="title"><i class="el-icon-date"/>数据管理</template>
                         <el-menu-item index="userManage">买家管理</el-menu-item>
                         <el-menu-item index="shopManage">卖家管理</el-menu-item>
                         <el-menu-item index="foodManage">商品管理</el-menu-item>
@@ -18,7 +18,7 @@
                         <el-menu-item index="addGoods">添加商品</el-menu-item>
                     </el-submenu>
                     <el-submenu index="4">
-                        <template slot="title"><i class="el-icon-star-on"/>图表</template>
+                        <template slot="title"><i class="el-icon-picture"/>图表</template>
                         <el-menu-item index="visitor">买家分布</el-menu-item>
                         <el-menu-item index="merchants">卖家分布</el-menu-item>
                         <el-menu-item index="food">商品分类</el-menu-item>
@@ -37,7 +37,7 @@
                     </el-submenu>
                 </el-menu>
             </el-col>
-            <el-col :span="20" class="el-col-right">
+            <el-col :span="21" class="el-col-right">
                 <keep-alive>
                     <router-view></router-view>
                 </keep-alive>

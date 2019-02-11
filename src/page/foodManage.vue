@@ -7,8 +7,7 @@
                 @expand='expand'
                 :expand-row-keys='expendRow'
                 :row-key="row => row.index"
-                :default-sort="{prop:'rating',rating:'desc'}"
-                style="width: 100%">
+                :default-sort="{prop:'rating',rating:'desc'}">
                 <el-table-column type="expand">
                     <template slot-scope="props">
                         <el-form label-position="left" inline class="demo-table-expand">

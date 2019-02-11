@@ -5,8 +5,7 @@
             <el-table
                 :data="tableData"
                 highlight-current-row
-                :default-sort="{prop:'registe_time',order:'desc'}"
-                style="width: 100%">
+                :default-sort="{prop:'registe_time',order:'desc'}">
                 <el-table-column
                     type="index"
                     width="100">
@@ -107,5 +106,6 @@
 
 <style lang="less">
     @import '../style/mixin';
+
 </style>
 

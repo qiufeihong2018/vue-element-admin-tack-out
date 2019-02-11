@@ -4,7 +4,6 @@
         <div class="table_container">
             <el-table
                 :data="tableData"
-                style="width: 100%"
                 :default-sort="{prop:'create_time',rating:'desc'}">
                 <el-table-column
                     prop="user_name"
