@@ -13,11 +13,6 @@
                         <el-menu-item index="adminManage"><i class="el-icon-view"/>管理员管理</el-menu-item>
                     </el-submenu>
                     <el-submenu index="3">
-                        <template slot="title"><i class="el-icon-plus"/>添加数据</template>
-                        <el-menu-item index="addShop"><i class="el-icon-circle-check"/>添加卖家</el-menu-item>
-                        <el-menu-item index="addGoods"><i class="el-icon-circle-check"/>添加商品</el-menu-item>
-                    </el-submenu>
-                    <el-submenu index="4">
                         <template slot="title"><i class="el-icon-picture"/>图表</template>
                         <el-menu-item index="visitor"><i class="el-icon-star-on"/>买家分布</el-menu-item>
                         <el-menu-item index="merchants"><i class="el-icon-star-on"/>卖家分布</el-menu-item>
@@ -25,6 +20,11 @@
                         <el-menu-item index="menu"><i class="el-icon-star-on"/>订单分布</el-menu-item>
                         <el-menu-item index="admin"><i class="el-icon-star-on"/>管理员分布</el-menu-item>
                         <el-menu-item index="map"><i class="el-icon-star-on"/>地图</el-menu-item>
+                    </el-submenu>
+                    <el-submenu index="4">
+                        <template slot="title"><i class="el-icon-plus"/>添加数据</template>
+                        <el-menu-item index="addShop"><i class="el-icon-circle-check"/>添加卖家</el-menu-item>
+                        <el-menu-item index="addGoods"><i class="el-icon-circle-check"/>添加商品</el-menu-item>
                     </el-submenu>
                     <el-submenu index="5">
                         <template slot="title"><i class="el-icon-setting"/>设置</template>
