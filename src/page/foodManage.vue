@@ -430,14 +430,6 @@
         width: 50%;
     }
 
-    .table_container {
-        padding: 20px;
-    }
-
-    .Pagination {
-        float: right;
-        margin: 10px;
-    }
 
     .avatar-uploader .el-upload {
         border: 1px dashed #d9d9d9;

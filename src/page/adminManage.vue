@@ -114,15 +114,6 @@
 
 <style lang="less">
     @import '../style/mixin';
-
-    .table_container {
-        padding: 20px;
-
-        .Pagination {
-            float: right;
-            margin: 10px;
-        }
-    }
 </style>
 
 

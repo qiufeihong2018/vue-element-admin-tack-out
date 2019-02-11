@@ -351,15 +351,6 @@
         width: 50%;
     }
 
-    .table_container {
-        padding: 20px;
-    }
-
-    .Pagination {
-        margin: 10px;
-        float: right;
-    }
-
     .avatar-uploader .el-upload {
         border: 1px dashed #d9d9d9;
         border-radius: 6px;

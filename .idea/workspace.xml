@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2bb06346-a6b8-43bb-8931-047cf090fb0d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/page/adminManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/adminManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/foodManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/foodManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/orderMange.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/orderMange.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/shopManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/shopManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/userManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/userManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/mixin.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/mixin.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,15 +20,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/page/adminManage.vue">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/userManage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+            <state relative-caret-position="354">
+              <caret line="108" column="29" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/shopManage.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="97">
+              <caret line="352" selection-start-line="352" selection-end-line="352" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/foodManage.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="431" lean-forward="true" selection-start-line="431" selection-end-line="431" />
               <folding>
                 <element signature="n#style#0;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#3617#3647#0" />
+                <element signature="n#el-table-column#0;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#el-table-column#1;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#el-table-column#2;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#el-dialog#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#el-dialog#1;n#div#0;n#div#0;n#template#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/page/orderMange.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="160" column="24" lean-forward="true" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
+              <folding>
+                <element signature="n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#style#0;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/adminManage.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="115" column="29" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/style/mixin.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="73" column="6" lean-forward="true" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -67,9 +128,9 @@
       <find>countData</find>
       <find>getResturants</find>
       <find>tableData</find>
-      <find>Pagination</find>
-      <find>handleSizeChange</find>
       <find>table_container</find>
+      <find>handleSizeChange</find>
+      <find>Pagination</find>
     </findStrings>
     <replaceStrings>
       <replace>dist</replace>
@@ -101,7 +162,6 @@
         <option value="$PROJECT_DIR$/src/page/explain.vue" />
         <option value="$PROJECT_DIR$/build/build.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/src/style/mixin.less" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/components/headTop.vue" />
         <option value="$PROJECT_DIR$/src/layouts/layout/components/Sidebar/Item.vue" />
@@ -138,11 +198,12 @@
         <option value="$PROJECT_DIR$/src/api/home.js" />
         <option value="$PROJECT_DIR$/src/api/user.js" />
         <option value="$PROJECT_DIR$/src/page/home.vue" />
+        <option value="$PROJECT_DIR$/src/style/mixin.less" />
+        <option value="$PROJECT_DIR$/src/page/adminManage.vue" />
         <option value="$PROJECT_DIR$/src/page/userManage.vue" />
         <option value="$PROJECT_DIR$/src/page/shopManage.vue" />
         <option value="$PROJECT_DIR$/src/page/foodManage.vue" />
         <option value="$PROJECT_DIR$/src/page/orderMange.vue" />
-        <option value="$PROJECT_DIR$/src/page/adminManage.vue" />
       </list>
     </option>
   </component>
@@ -176,6 +237,12 @@
               <item name="vue-element-admin-tack-out" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-element-admin-tack-out" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-element-admin-tack-out" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -240,18 +307,18 @@
       <workItem from="1549621424520" duration="3412000" />
       <workItem from="1549711629616" duration="5231000" />
       <workItem from="1549805037774" duration="3814000" />
-      <workItem from="1549853108412" duration="3681000" />
+      <workItem from="1549853108412" duration="4095000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53930000" />
+    <option name="totallyTimeSpent" value="54344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20851529" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20851529" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -263,7 +330,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49934897" visible="true" weight="0.28422153" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49934897" visible="true" weight="0.28422153" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50065106" side_tool="true" weight="0.2859116" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -275,7 +342,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/dev.env.js" />
     <entry file="file://$PROJECT_DIR$/src/utils/index.js" />
     <entry file="file://$PROJECT_DIR$/build/utils.js" />
     <entry file="file://$PROJECT_DIR$/build/vue-loader.conf.js" />
@@ -319,7 +385,6 @@
     <entry file="file://$PROJECT_DIR$/src/api/home.js" />
     <entry file="file://$PROJECT_DIR$/src/api/user.js" />
     <entry file="file://$PROJECT_DIR$/src/page/home.vue" />
-    <entry file="file://$PROJECT_DIR$/src/page/userManage.vue" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -331,17 +396,41 @@
     <entry file="file://$PROJECT_DIR$/src/components/HeadTop.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/style/mixin.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="73" column="6" lean-forward="true" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/adminManage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="115" column="29" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/userManage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="108" column="29" selection-start-line="108" selection-start-column="29" selection-end-line="108" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/page/shopManage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="76" column="35" lean-forward="true" selection-start-line="75" selection-start-column="19" selection-end-line="76" selection-end-column="35" />
+        <state relative-caret-position="97">
+          <caret line="352" selection-start-line="352" selection-end-line="352" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/foodManage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+        <state relative-caret-position="76">
+          <caret line="431" lean-forward="true" selection-start-line="431" selection-end-line="431" />
           <folding>
             <element signature="n#style#0;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#el-table-column#0;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
@@ -355,23 +444,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/orderMange.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+        <state relative-caret-position="288">
+          <caret line="160" column="24" lean-forward="true" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
           <folding>
             <element signature="n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#style#0;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2516#2559#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/adminManage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#3617#3647#0" />
           </folding>
         </state>
       </provider>

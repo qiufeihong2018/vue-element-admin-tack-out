@@ -35,7 +35,8 @@
                     :page-sizes="[10,50,100,200]"
                     :page-size="10"
                     layout="total,sizes, prev, pager, next,jumper"
-                    :total="count">
+                    :total="count"
+                    background>
                 </el-pagination>
             </div>
         </div>
@@ -66,7 +67,7 @@
             async initData() {
                 try {
                     const countData = await apiUser.getUserCount();
-                    if (countData.status ==1) {
+                    if (countData.status == 1) {
                         this.count = countData.count;
                     } else {
                         throw new Error('获取数据失败');
@@ -106,13 +107,5 @@
 
 <style lang="less">
     @import '../style/mixin';
-
-    .table_container {
-        padding: 20px;
-        .Pagination {
-            text-align: right;
-            margin-top: 10px;
-        }
-    }
 </style>
 
