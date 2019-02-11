@@ -49,8 +49,8 @@
 <script>
     export default {
         computed: {
-            defaultActive: function () {
-                return this.$route.path.replace('/', '');
+            defaultActive() {
+                return this.$route.path.replace('/', '')
             }
         },
     }
@@ -67,10 +67,20 @@
     .el-col-left
         min-height 100%
         background-color #324057
+
         .el-menu
             min-height 100%
 
     .el-col-right
         height 100%
         overflow auto
+
+
+    .el-submenu .el-menu-item
+        height 50px
+        line-height 50px
+        padding 0 45px
+        min-width 0px
+
+
 </style>
