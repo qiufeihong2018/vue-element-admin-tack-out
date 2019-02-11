@@ -6,8 +6,8 @@
 </template>
 
 <script>
-    import HeadTop from '../components/HeadTop'
-    import FoodPie from '../components/Charts/foodPie'
+    import HeadTop from '../../components/HeadTop'
+    import FoodPie from '../../components/Charts/foodPie'
     export default {
         name: "food",
         components: {

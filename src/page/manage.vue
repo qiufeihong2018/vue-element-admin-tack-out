@@ -14,7 +14,7 @@
                     </el-submenu>
                     <el-submenu index="3">
                         <template slot="title"><i class="el-icon-picture"/>图表</template>
-                        <el-menu-item index="visitor"><i class="el-icon-star-on"/>买家分布</el-menu-item>
+                        <el-menu-item index="user"><i class="el-icon-star-on"/>买家分布</el-menu-item>
                         <el-menu-item index="merchants"><i class="el-icon-star-on"/>卖家分布</el-menu-item>
                         <el-menu-item index="food"><i class="el-icon-star-on"/>商品分类</el-menu-item>
                         <el-menu-item index="menu"><i class="el-icon-star-on"/>订单分布</el-menu-item>

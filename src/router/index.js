@@ -6,20 +6,19 @@ Vue.use(Router)
 const login = r => require.ensure([], () => r(require('@/page/login')), 'login');
 const manage = r => require.ensure([], () => r(require('@/page/manage')), 'manage');
 const home = r => require.ensure([], () => r(require('@/page/home')), 'home');
-const addShop = r => require.ensure([], () => r(require('@/page/addShop')), 'addShop');
-const addGoods = r => require.ensure([], () => r(require('@/page/addGoods')), 'addGoods');
-const userManage = r => require.ensure([], () => r(require('@/page/userManage')), 'userManage');
-const shopManage = r => require.ensure([], () => r(require('@/page/shopManage')), 'shopManage');
-const foodManage = r => require.ensure([], () => r(require('@/page/foodManage')), 'foodManage');
-const orderMange = r => require.ensure([], () => r(require('@/page/orderMange')), 'orderMange');
-const adminManage = r => require.ensure([], () => r(require('@/page/adminManage')), 'adminManage');
-const visitor = r => require.ensure([], () => r(require('@/page/user')), 'visitor');
-const map = r => require.ensure([], () => r(require('@/page/map')), 'map')
-const merchants = r => require.ensure([], () => r(require('@/page/merchants')), 'merchants')
-const food = r => require.ensure([], () => r(require('@/page/food')), 'food')
-const menu = r => require.ensure([], () => r(require('@/page/menu')), 'menu')
-const admin = r => require.ensure([], () => r(require('@/page/admin')), 'admin')
-const newMember = r => require.ensure([], () => r(require('@/page/newMember')), 'newMember');
+const addShop = r => require.ensure([], () => r(require('@/page/dataAdd/addShop')), 'addShop');
+const addGoods = r => require.ensure([], () => r(require('@/page/dataAdd/addGoods')), 'addGoods');
+const userManage = r => require.ensure([], () => r(require('@/page/manage/userManage')), 'userManage');
+const shopManage = r => require.ensure([], () => r(require('@/page/manage/shopManage')), 'shopManage');
+const foodManage = r => require.ensure([], () => r(require('@/page/manage/foodManage')), 'foodManage');
+const orderMange = r => require.ensure([], () => r(require('@/page/manage/orderMange')), 'orderMange');
+const adminManage = r => require.ensure([], () => r(require('@/page/manage/adminManage')), 'adminManage');
+const user = r => require.ensure([], () => r(require('@/page/picture/user')), 'user');
+const map = r => require.ensure([], () => r(require('@/page/picture/map')), 'map')
+const merchants = r => require.ensure([], () => r(require('@/page/picture/merchants')), 'merchants')
+const food = r => require.ensure([], () => r(require('@/page/picture/food')), 'food')
+const menu = r => require.ensure([], () => r(require('@/page/picture/menu')), 'menu')
+const admin = r => require.ensure([], () => r(require('@/page/picture/admin')), 'admin')
 const adminSet = r => require.ensure([], () => r(require('@/page/adminSet')), 'adminSet');
 const explain = r => require.ensure([], () => r(require('@/page/explain')), 'explain');
 
@@ -65,8 +64,8 @@ const routes = [
             component: adminManage,
             meta: ['数据管理', '管理员管理'],
         }, {
-            path: '/visitor',
-            component: visitor,
+            path: '/user',
+            component: user,
             meta: ['图表', '用户分布'],
         }, {
             path: '/map',
@@ -76,10 +75,6 @@ const routes = [
             path: '/merchants',
             component: merchants,
             meta: ['图表', '商家分布']
-        }, {
-            path: '/newMember',
-            component: newMember,
-            meta: ['图表', '用户数据'],
         }, {
             path: '/food',
             component: food,

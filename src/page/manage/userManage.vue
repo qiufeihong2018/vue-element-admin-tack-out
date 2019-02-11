@@ -4,26 +4,26 @@
         <div class="table_container">
             <el-table
                 :data="tableData"
-                :default-sort="{prop:'create_time',rating:'desc'}">
+                highlight-current-row
+                :default-sort="{prop:'registe_time',order:'desc'}">
                 <el-table-column
-                    prop="user_name"
-                    label="姓名"
-                    width="180">
+                    type="index"
+                    width="100">
                 </el-table-column>
                 <el-table-column
-                    prop="create_time"
+                    property="registe_time"
                     label="注册日期"
-                    width="220"
-                    sortable>
+                    sortable
+                    width="220">
                 </el-table-column>
                 <el-table-column
-                    prop="city"
-                    label="地址"
-                    width="180">
+                    property="username"
+                    label="买家姓名"
+                    width="220">
                 </el-table-column>
                 <el-table-column
-                    prop="admin"
-                    label="权限">
+                    property="city"
+                    label="注册地址">
                 </el-table-column>
             </el-table>
             <div class="Pagination">
@@ -31,10 +31,11 @@
                     @size-change="handleSizeChange"
                     @current-change="handleCurrentChange"
                     :current-page="currentPage"
-                    :page-size="20"
                     :page-sizes="[10,50,100,200]"
+                    :page-size="10"
                     layout="total,sizes, prev, pager, next,jumper"
-                    :total="count">
+                    :total="count"
+                    background>
                 </el-pagination>
             </div>
         </div>
@@ -42,15 +43,13 @@
 </template>
 
 <script>
-    import HeadTop from '../components/HeadTop'
-    import {adminCount} from "@/api/home"
-    import {adminManage} from '@/api/getData'
+    import HeadTop from '../../components/HeadTop'
+    import * as apiUser from '@/api/user'
 
     export default {
         data() {
             return {
                 tableData: [],
-                currentRow: null,
                 offset: 0,
                 limit: 10,
                 count: 0,
@@ -66,53 +65,47 @@
         methods: {
             async initData() {
                 try {
-                    const countData = await adminCount();
+                    const countData = await apiUser.getUserCount();
                     if (countData.status == 1) {
                         this.count = countData.count;
                     } else {
                         throw new Error('获取数据失败');
                     }
-                    this.getAdmin();
+                    this.getUsers();
                 } catch (err) {
                     console.log('获取数据失败', err);
                 }
             },
             handleSizeChange(val) {
+                // 每页条数
                 this.limit = val
-                this.getAdmin()
+                this.getUsers()
             },
             handleCurrentChange(val) {
+                // 当前页
                 this.currentPage = val;
+                // 之前页的条数
                 this.offset = (val - 1) * this.limit;
-                this.getAdmin()
+                this.getUsers()
             },
-            async getAdmin() {
-                try {
-                    const res = await adminManage({offset: this.offset, limit: this.limit});
-                    if (res.status == 1) {
-                        this.tableData = [];
-                        res.data.forEach(item => {
-                            const tableItem = {
-                                create_time: item.create_time,
-                                user_name: item.user_name,
-                                admin: item.admin,
-                                city: item.city,
-                            }
-                            this.tableData.push(tableItem)
-                        })
-                    } else {
-                        throw new Error(res.message)
-                    }
-                } catch (err) {
-                    console.log('获取数据失败', err);
-                }
+            async getUsers() {
+                const Users = await apiUser.getUserList({offset: this.offset, limit: this.limit});
+                // 先清空
+                this.tableData = []
+                Users.forEach(item => {
+                    const tableData = {};
+                    tableData.username = item.username;
+                    tableData.registe_time = item.registe_time;
+                    tableData.city = item.city;
+                    this.tableData.push(tableData);
+                })
             }
         },
     }
 </script>
 
 <style lang="less">
-    @import '../style/mixin';
-</style>
+    @import '../../style/mixin';
 
+</style>
 

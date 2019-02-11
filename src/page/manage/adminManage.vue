@@ -4,26 +4,26 @@
         <div class="table_container">
             <el-table
                 :data="tableData"
-                highlight-current-row
-                :default-sort="{prop:'registe_time',order:'desc'}">
+                :default-sort="{prop:'create_time',rating:'desc'}">
                 <el-table-column
-                    type="index"
-                    width="100">
+                    prop="user_name"
+                    label="姓名"
+                    width="180">
                 </el-table-column>
                 <el-table-column
-                    property="registe_time"
+                    prop="create_time"
                     label="注册日期"
-                    sortable
-                    width="220">
+                    width="220"
+                    sortable>
                 </el-table-column>
                 <el-table-column
-                    property="username"
-                    label="买家姓名"
-                    width="220">
+                    prop="city"
+                    label="地址"
+                    width="180">
                 </el-table-column>
                 <el-table-column
-                    property="city"
-                    label="注册地址">
+                    prop="admin"
+                    label="权限">
                 </el-table-column>
             </el-table>
             <div class="Pagination">
@@ -31,11 +31,10 @@
                     @size-change="handleSizeChange"
                     @current-change="handleCurrentChange"
                     :current-page="currentPage"
+                    :page-size="20"
                     :page-sizes="[10,50,100,200]"
-                    :page-size="10"
                     layout="total,sizes, prev, pager, next,jumper"
-                    :total="count"
-                    background>
+                    :total="count">
                 </el-pagination>
             </div>
         </div>
@@ -43,13 +42,15 @@
 </template>
 
 <script>
-    import HeadTop from '../components/HeadTop'
-    import * as apiUser from '@/api/user'
+    import HeadTop from '../../components/HeadTop'
+    import {adminCount} from "@/api/home"
+    import {adminManage} from '@/api/getData'
 
     export default {
         data() {
             return {
                 tableData: [],
+                currentRow: null,
                 offset: 0,
                 limit: 10,
                 count: 0,
@@ -65,47 +66,53 @@
         methods: {
             async initData() {
                 try {
-                    const countData = await apiUser.getUserCount();
+                    const countData = await adminCount();
                     if (countData.status == 1) {
                         this.count = countData.count;
                     } else {
                         throw new Error('获取数据失败');
                     }
-                    this.getUsers();
+                    this.getAdmin();
                 } catch (err) {
                     console.log('获取数据失败', err);
                 }
             },
             handleSizeChange(val) {
-                // 每页条数
                 this.limit = val
-                this.getUsers()
+                this.getAdmin()
             },
             handleCurrentChange(val) {
-                // 当前页
                 this.currentPage = val;
-                // 之前页的条数
                 this.offset = (val - 1) * this.limit;
-                this.getUsers()
+                this.getAdmin()
             },
-            async getUsers() {
-                const Users = await apiUser.getUserList({offset: this.offset, limit: this.limit});
-                // 先清空
-                this.tableData = []
-                Users.forEach(item => {
-                    const tableData = {};
-                    tableData.username = item.username;
-                    tableData.registe_time = item.registe_time;
-                    tableData.city = item.city;
-                    this.tableData.push(tableData);
-                })
+            async getAdmin() {
+                try {
+                    const res = await adminManage({offset: this.offset, limit: this.limit});
+                    if (res.status == 1) {
+                        this.tableData = [];
+                        res.data.forEach(item => {
+                            const tableItem = {
+                                create_time: item.create_time,
+                                user_name: item.user_name,
+                                admin: item.admin,
+                                city: item.city,
+                            }
+                            this.tableData.push(tableItem)
+                        })
+                    } else {
+                        throw new Error(res.message)
+                    }
+                } catch (err) {
+                    console.log('获取数据失败', err);
+                }
             }
         },
     }
 </script>
 
 <style lang="less">
-    @import '../style/mixin';
-
+    @import '../../style/mixin';
 </style>
+
 

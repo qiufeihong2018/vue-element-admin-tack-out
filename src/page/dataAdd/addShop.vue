@@ -447,7 +447,7 @@
 </script>
 
 <style lang="less">
-	@import '../style/mixin';
+	@import '../../style/mixin';
 	.button_submit{
 		text-align: center;
 	}

@@ -130,7 +130,7 @@
 </template>
 
 <script>
-    import HeadTop from '../components/HeadTop'
+    import HeadTop from '../../components/HeadTop'
     import {baseUrl, baseImgPath} from '@/config/env'
     import {
         cityGuess,
@@ -333,7 +333,7 @@
 </script>
 
 <style lang="less">
-    @import '../style/mixin';
+    @import '../../style/mixin';
 
     .demo-table-expand {
         font-size: 0;

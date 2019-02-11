@@ -1,19 +1,19 @@
 <template>
     <div>
         <HeadTop></HeadTop>
-        <AdminPie></AdminPie>
+        <MenuPie></MenuPie>
     </div>
 </template>
 
 <script>
-    import HeadTop from '../components/HeadTop'
-    import AdminPie from '../components/Charts/adminPie'
+    import HeadTop from '../../components/HeadTop'
+    import MenuPie from '../../components/Charts/menuPie'
 
     export default {
-        name: "admin",
+        name: "menu",
         components: {
             HeadTop,
-            AdminPie
+            MenuPie
         }
     }
 </script>

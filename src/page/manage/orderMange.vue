@@ -59,7 +59,7 @@
 </template>
 
 <script>
-    import HeadTop from '../components/HeadTop'
+    import HeadTop from '../../components/HeadTop'
     import {getOrderCount} from '@/api/home'
     import {getOrderList, getResturantDetail, getUserInfo, getAddressById} from '@/api/getData'
 
@@ -155,7 +155,7 @@
 </script>
 
 <style lang="less">
-    @import '../style/mixin';
+    @import '../../style/mixin';
 
     .demo-table-expand {
         font-size: 0;

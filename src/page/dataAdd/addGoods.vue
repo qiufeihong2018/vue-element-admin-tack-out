@@ -372,7 +372,7 @@
 </script>
 
 <style lang="less">
-    @import '../style/mixin';
+    @import '../../style/mixin';
 
     .form {
         min-width: 400px;
