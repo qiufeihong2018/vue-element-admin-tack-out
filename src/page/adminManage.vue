@@ -4,7 +4,8 @@
         <div class="table_container">
             <el-table
                 :data="tableData"
-                style="width: 100%">
+                style="width: 100%"
+                :default-sort="{prop:'create_time',rating:'desc'}">
                 <el-table-column
                     prop="user_name"
                     label="姓名"
@@ -13,7 +14,8 @@
                 <el-table-column
                     prop="create_time"
                     label="注册日期"
-                    width="220">
+                    width="220"
+                    sortable>
                 </el-table-column>
                 <el-table-column
                     prop="city"
@@ -25,13 +27,14 @@
                     label="权限">
                 </el-table-column>
             </el-table>
-            <div class="Pagination" style="text-align: left;margin-top: 10px;">
+            <div class="Pagination">
                 <el-pagination
                     @size-change="handleSizeChange"
                     @current-change="handleCurrentChange"
                     :current-page="currentPage"
                     :page-size="20"
-                    layout="total, prev, pager, next"
+                    :page-sizes="[10,50,100,200]"
+                    layout="total,sizes, prev, pager, next,jumper"
                     :total="count">
                 </el-pagination>
             </div>
@@ -50,7 +53,7 @@
                 tableData: [],
                 currentRow: null,
                 offset: 0,
-                limit: 20,
+                limit: 10,
                 count: 0,
                 currentPage: 1,
             }
@@ -76,7 +79,8 @@
                 }
             },
             handleSizeChange(val) {
-                console.log(`每页 ${val} 条`);
+                this.limit = val
+                this.getAdmin()
             },
             handleCurrentChange(val) {
                 this.currentPage = val;
@@ -113,6 +117,11 @@
 
     .table_container {
         padding: 20px;
+
+        .Pagination {
+            float: right;
+            margin: 10px;
+        }
     }
 </style>
 
