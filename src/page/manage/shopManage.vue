@@ -72,8 +72,8 @@
                     @size-change="handleSizeChange"
                     @current-change="handleCurrentChange"
                     :current-page="currentPage"
-                    :page-sizes="[10,50,100,200]"
-                    :page-size="10"
+                    :page-sizes="[20,50,100,200]"
+                    :page-size="20"
                     layout="total,sizes, prev, pager, next,jumper"
                     :total="count">
                 </el-pagination>
@@ -132,15 +132,7 @@
 <script>
     import HeadTop from '../../components/HeadTop'
     import {baseUrl, baseImgPath} from '@/config/env'
-    import {
-        cityGuess,
-        getResturants,
-        getResturantsCount,
-        foodCategory,
-        updateResturant,
-        searchplace,
-        deleteResturant
-    } from '@/api/getData'
+    import * as apiShop from '@/api/shop'
 
     export default {
         data() {
@@ -149,7 +141,7 @@
                 baseImgPath,
                 city: {},
                 offset: 0,
-                limit: 10,
+                limit: 20,
                 count: 0,
                 tableData: [],
                 currentPage: 1,
@@ -167,10 +159,28 @@
             this.initData();
         },
         methods: {
+            async getResturants() {
+                const {latitude, longitude} = this.city;
+                const restaurants = await apiShop.getResturants({latitude, longitude, offset: this.offset, limit: this.limit});
+                this.tableData = [];
+                restaurants.forEach(item => {
+                    const tableData = {};
+                    tableData.name = item.name;
+                    tableData.address = item.address;
+                    tableData.description = item.description;
+                    tableData.id = item.id;
+                    tableData.phone = item.phone;
+                    tableData.rating = item.rating;
+                    tableData.recent_order_num = item.recent_order_num;
+                    tableData.category = item.category;
+                    tableData.image_path = item.image_path;
+                    this.tableData.push(tableData);
+                })
+            },
             async initData() {
                 try {
-                    this.city = await cityGuess();
-                    const countData = await getResturantsCount();
+                    this.city = await apiShop.cityGuess();
+                    const countData = await apiShop.getResturantsCount();
                     if (countData.status == 1) {
                         this.count = countData.count;
                     } else {
@@ -183,7 +193,7 @@
             },
             async getCategory() {
                 try {
-                    const categories = await foodCategory();
+                    const categories = await apiShop.foodCategory();
                     categories.forEach(item => {
                         if (item.sub_categories.length) {
                             const addnew = {
@@ -207,26 +217,7 @@
                     console.log('获取商铺种类失败', err);
                 }
             },
-            async getResturants() {
-                const {latitude, longitude} = this.city;
-                const restaurants = await getResturants({latitude, longitude, offset: this.offset, limit: this.limit});
-                this.tableData = [];
-                restaurants.forEach(item => {
-                    const tableData = {};
-                    tableData.name = item.name;
-                    tableData.address = item.address;
-                    tableData.description = item.description;
-                    tableData.id = item.id;
-                    tableData.phone = item.phone;
-                    tableData.rating = item.rating;
-                    tableData.recent_order_num = item.recent_order_num;
-                    tableData.category = item.category;
-                    tableData.image_path = item.image_path;
-                    this.tableData.push(tableData);
-                })
-            },
             handleSizeChange(val) {
-                // 每页条数
                 this.limit = val
                 this.getResturants()
             },
@@ -249,7 +240,7 @@
             },
             async handleDelete(index, row) {
                 try {
-                    const res = await deleteResturant(row.id);
+                    const res = await apiShop.deleteResturant(row.id);
                     if (res.status == 1) {
                         this.$message({
                             type: 'success',
@@ -270,7 +261,7 @@
             async querySearchAsync(queryString, cb) {
                 if (queryString) {
                     try {
-                        const cityList = await searchplace(this.city.id, queryString);
+                        const cityList = await apiShop.searchplace(this.city.id, queryString);
                         if (cityList instanceof Array) {
                             cityList.map(item => {
                                 item.value = item.address;
@@ -311,7 +302,7 @@
                 try {
                     Object.assign(this.selectTable, this.address);
                     this.selectTable.category = this.selectedCategory.join('/');
-                    const res = await updateResturant(this.selectTable)
+                    const res = await apiShop.updateResturant(this.selectTable)
                     if (res.status == 1) {
                         this.$message({
                             type: 'success',

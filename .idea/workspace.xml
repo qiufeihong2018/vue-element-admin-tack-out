@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bb06346-a6b8-43bb-8931-047cf090fb0d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/api/shop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/getData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/getData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/env.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/dataAdd/addGoods.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/dataAdd/addGoods.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/dataAdd/addShop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/dataAdd/addShop.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/manage/shopManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/manage/shopManage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/manage/userManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/manage/userManage.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -65,16 +69,81 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/page/manage/userManage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="31" column="30" selection-end-line="123" />
+            <state relative-caret-position="291">
+              <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
               <folding>
+                <element signature="n#el-table-column#0;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="n#el-table-column#1;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#el-table-column#1;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#el-table-column#1;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#el-table-column#3;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#el-table-column#4;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#el-table-column#5;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#el-table-column#6;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
                 <element signature="e#1496#1542#0" expanded="true" />
                 <element signature="e#1944#2389#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/page/manage/shopManage.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="161" column="31" selection-start-line="161" selection-start-column="18" selection-end-line="161" selection-end-column="31" />
+              <folding>
+                <element signature="n#el-dialog#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#style#0;n#el-autocomplete#0;n#el-form-item#1;n#el-form#0;n#el-dialog#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#6216#6262#0" expanded="true" />
+                <element signature="e#7168#7667#0" />
+                <element signature="e#7701#8777#0" />
+                <element signature="e#9735#9844#0" />
+                <element signature="e#9883#10029#0" />
+                <element signature="e#10066#10395#0" />
+                <element signature="e#10429#10530#0" />
+                <element signature="e#10575#11274#0" />
+                <element signature="e#11328#11918#0" />
+                <element signature="e#11952#12091#0" />
+                <element signature="e#12143#12358#0" />
+                <element signature="e#12397#12843#0" />
+                <element signature="e#12876#13742#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/getData.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="915">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/shop.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-216">
+              <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/user.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config/env.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -91,19 +160,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>userCount</find>
-      <find>getUserCount</find>
-      <find>countData</find>
-      <find>getResturants</find>
-      <find>table_container</find>
-      <find>el-row</find>
-      <find>el-col-left</find>
-      <find>defaultActive</find>
-      <find>manage_page</find>
-      <find>el-menu</find>
-      <find>visitor</find>
-      <find>newMember</find>
-      <find>formData</find>
       <find>button_submit</find>
       <find>el-form</find>
       <find>phone</find>
@@ -121,6 +177,19 @@
       <find>getUsers</find>
       <find>Users</find>
       <find>tableData</find>
+      <find>name</find>
+      <find>getCategory</find>
+      <find>latitude</find>
+      <find>addressSelect</find>
+      <find>city</find>
+      <find>baseUrl</find>
+      <find>cityGuess</find>
+      <find>getResturantsCount</find>
+      <find>foodCategory</find>
+      <find>updateResturant</find>
+      <find>searchplace</find>
+      <find>deleteResturant</find>
+      <find>getResturants</find>
     </findStrings>
     <replaceStrings>
       <replace>dist</replace>
@@ -150,8 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/page/explain.vue" />
         <option value="$PROJECT_DIR$/build/build.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -160,7 +227,6 @@
         <option value="$PROJECT_DIR$/src/page/map.vue" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/config/index.js" />
-        <option value="$PROJECT_DIR$/src/config/env.js" />
         <option value="$PROJECT_DIR$/build/dev-server.js" />
         <option value="$PROJECT_DIR$/src/page/visitor.vue" />
         <option value="$PROJECT_DIR$/src/utils/index.js" />
@@ -183,7 +249,6 @@
         <option value="$PROJECT_DIR$/src/store/modules/user.js" />
         <option value="$PROJECT_DIR$/src/api/echarts.js" />
         <option value="$PROJECT_DIR$/src/style/common.less" />
-        <option value="$PROJECT_DIR$/src/api/getData.js" />
         <option value="$PROJECT_DIR$/src/api/table.js" />
         <option value="$PROJECT_DIR$/src/api/home.js" />
         <option value="$PROJECT_DIR$/src/api/user.js" />
@@ -201,6 +266,10 @@
         <option value="$PROJECT_DIR$/src/page/dataAdd/addShop.vue" />
         <option value="$PROJECT_DIR$/src/page/dataAdd/addGoods.vue" />
         <option value="$PROJECT_DIR$/src/page/manage/userManage.vue" />
+        <option value="$PROJECT_DIR$/src/config/env.js" />
+        <option value="$PROJECT_DIR$/src/api/getData.js" />
+        <option value="$PROJECT_DIR$/src/api/shop.js" />
+        <option value="$PROJECT_DIR$/src/page/manage/shopManage.vue" />
       </list>
     </option>
   </component>
@@ -227,12 +296,23 @@
             <path>
               <item name="vue-element-admin-tack-out" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue-element-admin-tack-out" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-element-admin-tack-out" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-element-admin-tack-out" type="462c0819:PsiDirectoryNode" />
               <item name="shotPic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vue-element-admin-tack-out" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue-element-admin-tack-out" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-element-admin-tack-out" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-element-admin-tack-out" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vue-element-admin-tack-out" type="b2602c69:ProjectViewProjectNode" />
@@ -245,6 +325,12 @@
               <item name="vue-element-admin-tack-out" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-element-admin-tack-out" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-element-admin-tack-out" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vue-element-admin-tack-out" type="b2602c69:ProjectViewProjectNode" />
@@ -352,12 +438,12 @@
       <workItem from="1549621424520" duration="3412000" />
       <workItem from="1549711629616" duration="5231000" />
       <workItem from="1549805037774" duration="3814000" />
-      <workItem from="1549853108412" duration="13381000" />
+      <workItem from="1549853108412" duration="15162000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63630000" />
+    <option name="totallyTimeSpent" value="65411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -387,7 +473,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/dev-server.js" />
     <entry file="file://$PROJECT_DIR$/src/utils/request.js" />
     <entry file="file://$PROJECT_DIR$/build/build.js" />
     <entry file="file://$PROJECT_DIR$/src/page/picture/user.vue" />
@@ -410,12 +495,9 @@
     <entry file="file://$PROJECT_DIR$/src/api/echarts.js" />
     <entry file="file://$PROJECT_DIR$/src/config/fetch.js" />
     <entry file="file://$PROJECT_DIR$/src/style/common.less" />
-    <entry file="file://$PROJECT_DIR$/src/config/env.js" />
-    <entry file="file://$PROJECT_DIR$/src/api/getData.js" />
     <entry file="file://$PROJECT_DIR$/src/api/table.js" />
     <entry file="file://$PROJECT_DIR$/src/config/mUtils.js" />
     <entry file="file://$PROJECT_DIR$/src/api/home.js" />
-    <entry file="file://$PROJECT_DIR$/src/api/user.js" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -426,13 +508,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/HeadTop.vue">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/manage/shopManage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/manage/orderMange.vue">
       <provider selected="true" editor-type-id="text-editor">
@@ -573,12 +648,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/manage/userManage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="31" column="30" selection-end-line="123" />
+        <state relative-caret-position="291">
+          <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
           <folding>
+            <element signature="n#el-table-column#0;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="n#el-table-column#1;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#el-table-column#1;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#el-table-column#1;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#el-table-column#3;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#el-table-column#4;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#el-table-column#5;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#el-table-column#6;n#el-table#0;n#div#0;n#div#0;n#template#0;n#!!top" />
             <element signature="e#1496#1542#0" expanded="true" />
             <element signature="e#1944#2389#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/user.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/shop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/getData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/manage/shopManage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="161" column="31" selection-start-line="161" selection-start-column="18" selection-end-line="161" selection-end-column="31" />
+          <folding>
+            <element signature="n#el-dialog#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#el-autocomplete#0;n#el-form-item#1;n#el-form#0;n#el-dialog#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#6216#6262#0" expanded="true" />
+            <element signature="e#7168#7667#0" />
+            <element signature="e#7701#8777#0" />
+            <element signature="e#9735#9844#0" />
+            <element signature="e#9883#10029#0" />
+            <element signature="e#10066#10395#0" />
+            <element signature="e#10429#10530#0" />
+            <element signature="e#10575#11274#0" />
+            <element signature="e#11328#11918#0" />
+            <element signature="e#11952#12091#0" />
+            <element signature="e#12143#12358#0" />
+            <element signature="e#12397#12843#0" />
+            <element signature="e#12876#13742#0" />
           </folding>
         </state>
       </provider>
