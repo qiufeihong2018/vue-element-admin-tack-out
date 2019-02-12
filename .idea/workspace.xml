@@ -3,22 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2bb06346-a6b8-43bb-8931-047cf090fb0d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/addGoods.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/dataAdd/addGoods.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/addShop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/dataAdd/addShop.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/admin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/picture/admin.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/adminManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/manage/adminManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/food.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/picture/food.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/foodManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/manage/foodManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/manage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/manage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/map.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/picture/map.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/menu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/picture/menu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/merchants.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/picture/merchants.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/newMember.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/orderMange.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/manage/orderMange.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/shopManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/manage/shopManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/user.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/picture/user.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/userManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/manage/userManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/dataAdd/addShop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/dataAdd/addShop.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -32,33 +17,27 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/router/index.js">
+        <entry file="file://$PROJECT_DIR$/src/page/dataAdd/addShop.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/page/home.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/page/login.vue">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/page/manage.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+            <state relative-caret-position="63">
+              <caret line="3" column="37" selection-end-line="496" />
+              <folding>
+                <element signature="n#style#0;n#el-autocomplete#0;n#el-form-item#1;n#el-form#0;n#el-col#0;n#el-row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-form-item#6;n#el-form#0;n#el-col#0;n#el-row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-form-item#7;n#el-form#0;n#el-col#0;n#el-row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#el-form-item#10;n#el-form#0;n#el-col#0;n#el-row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#7697#8386#0" />
+                <element signature="e#8434#8804#0" />
+                <element signature="e#8834#9013#0" />
+                <element signature="e#9053#9188#0" />
+                <element signature="e#9232#9379#0" />
+                <element signature="e#9422#9577#0" />
+                <element signature="e#9607#9930#0" />
+                <element signature="e#9965#10136#0" />
+                <element signature="e#10160#11511#0" />
+                <element signature="e#11538#11587#0" />
+                <element signature="e#11616#13241#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,10 +54,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dtime</find>
-      <find>today</find>
-      <find>getOrderCount</find>
-      <find>adminDayCount</find>
       <find>apiArr</find>
       <find>adminCount</find>
       <find>baseUrl</find>
@@ -105,6 +80,10 @@
       <find>el-menu</find>
       <find>visitor</find>
       <find>newMember</find>
+      <find>formData</find>
+      <find>button_submit</find>
+      <find>el-form</find>
+      <find>phone</find>
     </findStrings>
     <replaceStrings>
       <replace>dist</replace>
@@ -181,6 +160,7 @@
         <option value="$PROJECT_DIR$/src/common/stylus/element-ui.styl" />
         <option value="$PROJECT_DIR$/src/page/manage.vue" />
         <option value="$PROJECT_DIR$/src/router/index.js" />
+        <option value="$PROJECT_DIR$/src/page/dataAdd/addShop.vue" />
       </list>
     </option>
   </component>
@@ -236,6 +216,13 @@
               <item name="vue-element-admin-tack-out" type="b2602c69:ProjectViewProjectNode" />
               <item name="vue-element-admin-tack-out" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="dataAdd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-element-admin-tack-out" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-element-admin-tack-out" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="router" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -259,7 +246,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/guyiItem/nuxt-template" />
+    <property name="last_opened_file_path" value="$USER_HOME$/devue/note" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="D:\githubMe\vue-element-admin-tack-out\node_modules\eslint" />
@@ -318,12 +305,12 @@
       <workItem from="1549621424520" duration="3412000" />
       <workItem from="1549711629616" duration="5231000" />
       <workItem from="1549805037774" duration="3814000" />
-      <workItem from="1549853108412" duration="6979000" />
+      <workItem from="1549853108412" duration="9367000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57228000" />
+    <option name="totallyTimeSpent" value="59616000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
@@ -353,7 +340,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/logo.png" />
     <entry file="file://$PROJECT_DIR$/build/dev-server.js" />
     <entry file="file://$PROJECT_DIR$/src/utils/request.js" />
     <entry file="file://$PROJECT_DIR$/build/build.js" />
@@ -498,8 +484,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="265">
+          <caret line="17" column="47" lean-forward="true" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/dataAdd/addShop.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="37" selection-end-line="496" />
+          <folding>
+            <element signature="n#style#0;n#el-autocomplete#0;n#el-form-item#1;n#el-form#0;n#el-col#0;n#el-row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-form-item#6;n#el-form#0;n#el-col#0;n#el-row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-form-item#7;n#el-form#0;n#el-col#0;n#el-row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-form-item#10;n#el-form#0;n#el-col#0;n#el-row#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#7697#8386#0" />
+            <element signature="e#8434#8804#0" />
+            <element signature="e#8834#9013#0" />
+            <element signature="e#9053#9188#0" />
+            <element signature="e#9232#9379#0" />
+            <element signature="e#9422#9577#0" />
+            <element signature="e#9607#9930#0" />
+            <element signature="e#9965#10136#0" />
+            <element signature="e#10160#11511#0" />
+            <element signature="e#11538#11587#0" />
+            <element signature="e#11616#13241#0" />
+          </folding>
         </state>
       </provider>
     </entry>
