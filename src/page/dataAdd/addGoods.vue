@@ -491,5 +491,4 @@
         height: 120px;
         display: block;
     }
-
 </style>

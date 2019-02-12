@@ -11,9 +11,8 @@
                     width="100">
                 </el-table-column>
                 <el-table-column
-                    property="registe_time"
-                    label="注册日期"
-                    sortable
+                    property="user_id"
+                    label="买家ID"
                     width="220">
                 </el-table-column>
                 <el-table-column
@@ -22,8 +21,30 @@
                     width="220">
                 </el-table-column>
                 <el-table-column
+                    property="registe_time"
+                    label="注册日期"
+                    sortable
+                    width="220">
+                </el-table-column>
+                <el-table-column
                     property="city"
-                    label="注册地址">
+                    label="注册地址"
+                    width="220">
+                </el-table-column>
+                <el-table-column
+                    property="balance"
+                    label="买家余额"
+                    width="220">
+                </el-table-column>
+                <el-table-column
+                    property="email"
+                    label="买家邮箱"
+                    width="100">
+                </el-table-column>
+                <el-table-column
+                    property="username"
+                    label="买家用户名"
+                    width="220">
                 </el-table-column>
             </el-table>
             <div class="Pagination">
@@ -31,11 +52,10 @@
                     @size-change="handleSizeChange"
                     @current-change="handleCurrentChange"
                     :current-page="currentPage"
-                    :page-sizes="[10,50,100,200]"
-                    :page-size="10"
+                    :page-sizes="[20,50,100,200]"
+                    :page-size="20"
                     layout="total,sizes, prev, pager, next,jumper"
-                    :total="count"
-                    background>
+                    :total="count">
                 </el-pagination>
             </div>
         </div>
@@ -51,7 +71,7 @@
             return {
                 tableData: [],
                 offset: 0,
-                limit: 10,
+                limit: 20,
                 count: 0,
                 currentPage: 1,
             }
@@ -76,6 +96,10 @@
                     console.log('获取数据失败', err);
                 }
             },
+            async getUsers() {
+                const Users = await apiUser.getUserList({offset: this.offset, limit: this.limit});
+                this.tableData = Users
+            },
             handleSizeChange(val) {
                 // 每页条数
                 this.limit = val
@@ -84,23 +108,11 @@
             handleCurrentChange(val) {
                 // 当前页
                 this.currentPage = val;
-                // 之前页的条数
+                // 开始条数
                 this.offset = (val - 1) * this.limit;
                 this.getUsers()
-            },
-            async getUsers() {
-                const Users = await apiUser.getUserList({offset: this.offset, limit: this.limit});
-                // 先清空
-                this.tableData = []
-                Users.forEach(item => {
-                    const tableData = {};
-                    tableData.username = item.username;
-                    tableData.registe_time = item.registe_time;
-                    tableData.city = item.city;
-                    this.tableData.push(tableData);
-                })
             }
-        },
+        }
     }
 </script>
 
