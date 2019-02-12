@@ -73,8 +73,8 @@
                     @size-change="handleSizeChange"
                     @current-change="handleCurrentChange"
                     :current-page="currentPage"
-                    :page-sizes="[10,50,100,200]"
-                    :page-size="10"
+                    :page-sizes="[20,50,100,200]"
+                    :page-size="20"
                     layout="total,sizes, prev, pager, next,jumper"
                     :total="count">
                 </el-pagination>
@@ -187,7 +187,7 @@
                 restaurant_id: null,
                 city: {},
                 offset: 0,
-                limit: 10,
+                limit: 20,
                 count: 0,
                 tableData: [],
                 currentPage: 1,

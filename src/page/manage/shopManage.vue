@@ -4,49 +4,63 @@
         <div class="table_container">
             <el-table
                 :data="tableData"
-                :default-sort="{prop:'name',order:'desc'}">
+                :default-sort="{prop:'rating',order:'desc'}">
                 <el-table-column type="expand">
                     <template slot-scope="props">
                         <el-form label-position="left" inline class="demo-table-expand">
-                            <el-form-item label="店铺名称">
+                            <el-form-item label="卖家名称">
                                 <span>{{ props.row.name }}</span>
                             </el-form-item>
-                            <el-form-item label="店铺地址">
-                                <span>{{ props.row.address }}</span>
+                            <el-form-item label="卖家距离">
+                                <span>{{ props.row.distance }}</span>
                             </el-form-item>
-                            <el-form-item label="店铺介绍">
-                                <span>{{ props.row.description }}</span>
-                            </el-form-item>
-                            <el-form-item label="店铺 ID">
+                            <el-form-item label="卖家 ID">
                                 <span>{{ props.row.id }}</span>
                             </el-form-item>
                             <el-form-item label="联系电话">
                                 <span>{{ props.row.phone }}</span>
                             </el-form-item>
-                            <el-form-item label="评分">
-                                <span>{{ props.row.rating }}</span>
+                            <el-form-item label="开业时间">
+                                <span>{{ props.row.opening_hours }}</span>
                             </el-form-item>
-                            <el-form-item label="销售量">
-                                <span>{{ props.row.recent_order_num }}</span>
+                            <el-form-item label="配送费">
+                                <span>{{ props.row.piecewise_agent_fee.tips }}</span>
                             </el-form-item>
                             <el-form-item label="分类">
                                 <span>{{ props.row.category }}</span>
+                            </el-form-item>
+                            <el-form-item label="宣传语">
+                                <span>{{props.row.promotion_info}}</span>
+                            </el-form-item>
+                            <el-form-item label="支持">
+                                <span v-for="item in  props.row.supports">{{item.description}}</span>
                             </el-form-item>
                         </el-form>
                     </template>
                 </el-table-column>
                 <el-table-column
-                    label="店铺名称"
                     prop="name"
-                    sortable="">
+                    label="卖家名称">
                 </el-table-column>
                 <el-table-column
-                    label="店铺地址"
-                    prop="address">
+                    prop="description"
+                    label="卖家介绍">
                 </el-table-column>
                 <el-table-column
-                    label="店铺介绍"
-                    prop="description">
+                    prop="address"
+                    label="卖家地址">
+                </el-table-column>
+                <el-table-column
+                    prop="rating"
+                    label="卖家评分"
+                    width="150"
+                    sortable>
+                </el-table-column>
+                <el-table-column
+                    prop="recent_order_num"
+                    label="卖家销售额"
+                    width="200"
+                    sortable>
                 </el-table-column>
                 <el-table-column label="操作" width="200">
                     <template slot-scope="scope">
@@ -78,10 +92,9 @@
                     :total="count">
                 </el-pagination>
             </div>
-
-            <el-dialog title="修改店铺信息" v-model="dialogFormVisible">
+            <el-dialog title="修改卖家信息" v-model="dialogFormVisible">
                 <el-form :model="selectTable">
-                    <el-form-item label="店铺名称" label-width="100px">
+                    <el-form-item label="卖家名称" label-width="100px">
                         <el-input v-model="selectTable.name" auto-complete="off"></el-input>
                     </el-form-item>
                     <el-form-item label="详细地址" label-width="100px">
@@ -94,13 +107,13 @@
                         ></el-autocomplete>
                         <span>当前城市：{{city.name}}</span>
                     </el-form-item>
-                    <el-form-item label="店铺介绍" label-width="100px">
+                    <el-form-item label="卖家介绍" label-width="100px">
                         <el-input v-model="selectTable.description"></el-input>
                     </el-form-item>
                     <el-form-item label="联系电话" label-width="100px">
                         <el-input v-model="selectTable.phone"></el-input>
                     </el-form-item>
-                    <el-form-item label="店铺分类" label-width="100px">
+                    <el-form-item label="卖家分类" label-width="100px">
                         <el-cascader
                             :options="categoryOptions"
                             v-model="selectedCategory"
@@ -161,21 +174,13 @@
         methods: {
             async getResturants() {
                 const {latitude, longitude} = this.city;
-                const restaurants = await apiShop.getResturants({latitude, longitude, offset: this.offset, limit: this.limit});
-                this.tableData = [];
-                restaurants.forEach(item => {
-                    const tableData = {};
-                    tableData.name = item.name;
-                    tableData.address = item.address;
-                    tableData.description = item.description;
-                    tableData.id = item.id;
-                    tableData.phone = item.phone;
-                    tableData.rating = item.rating;
-                    tableData.recent_order_num = item.recent_order_num;
-                    tableData.category = item.category;
-                    tableData.image_path = item.image_path;
-                    this.tableData.push(tableData);
-                })
+                const restaurants = await apiShop.getResturants({
+                    latitude,
+                    longitude,
+                    offset: this.offset,
+                    limit: this.limit
+                });
+                this.tableData = restaurants
             },
             async initData() {
                 try {
@@ -244,7 +249,7 @@
                     if (res.status == 1) {
                         this.$message({
                             type: 'success',
-                            message: '删除店铺成功'
+                            message: '删除卖家成功'
                         });
                         this.tableData.splice(index, 1);
                     } else {
@@ -255,7 +260,7 @@
                         type: 'error',
                         message: err.message
                     });
-                    console.log('删除店铺失败')
+                    console.log('删除卖家失败')
                 }
             },
             async querySearchAsync(queryString, cb) {
@@ -306,7 +311,7 @@
                     if (res.status == 1) {
                         this.$message({
                             type: 'success',
-                            message: '更新店铺信息成功'
+                            message: '更新卖家信息成功'
                         });
                         this.getResturants();
                     } else {

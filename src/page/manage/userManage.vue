@@ -11,38 +11,38 @@
                     width="100">
                 </el-table-column>
                 <el-table-column
-                    property="user_id"
+                    prop="user_id"
                     label="买家ID"
                     width="220">
                 </el-table-column>
                 <el-table-column
-                    property="username"
+                    prop="username"
                     label="买家姓名"
                     width="220">
                 </el-table-column>
                 <el-table-column
-                    property="registe_time"
+                    prop="registe_time"
                     label="注册日期"
                     sortable
                     width="220">
                 </el-table-column>
                 <el-table-column
-                    property="city"
+                    prop="city"
                     label="注册地址"
                     width="220">
                 </el-table-column>
                 <el-table-column
-                    property="balance"
+                    prop="balance"
                     label="买家余额"
                     width="220">
                 </el-table-column>
                 <el-table-column
-                    property="email"
+                    prop="email"
                     label="买家邮箱"
                     width="100">
                 </el-table-column>
                 <el-table-column
-                    property="username"
+                    prop="username"
                     label="买家用户名"
                     width="220">
                 </el-table-column>
