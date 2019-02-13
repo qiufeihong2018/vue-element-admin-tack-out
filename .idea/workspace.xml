@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2bb06346-a6b8-43bb-8931-047cf090fb0d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/shop.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/getData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/getData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/dataAdd/addGoods.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/dataAdd/addGoods.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/dataAdd/addShop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/dataAdd/addShop.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/manage/adminManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/manage/adminManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/manage/foodManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/manage/foodManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/manage/orderMange.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/manage/orderMange.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/manage/shopManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/manage/shopManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/manage/userManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/manage/userManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,15 +16,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/page/manage/shopManage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+            <state relative-caret-position="-1557">
+              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#el-autocomplete#0;n#el-form-item#1;n#el-form#0;n#el-dialog#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="e#6382#6428#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="210">
+                <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="70" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -59,7 +62,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>button_submit</find>
       <find>el-form</find>
       <find>phone</find>
       <find>form</find>
@@ -89,6 +91,7 @@
       <find>deleteResturant</find>
       <find>getResturants</find>
       <find>tableData</find>
+      <find>店铺</find>
     </findStrings>
     <replaceStrings>
       <replace>dist</replace>
@@ -106,6 +109,7 @@
       <replace>买家</replace>
       <replace>user</replace>
       <replace>商品</replace>
+      <replace>卖家</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\githubMe\vue-element-admin-tack-out\static</dir>
@@ -121,7 +125,6 @@
         <option value="$PROJECT_DIR$/src/components/headTop.vue" />
         <option value="$PROJECT_DIR$/src/layouts/layout/components/Sidebar/Item.vue" />
         <option value="$PROJECT_DIR$/src/page/map.vue" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/config/index.js" />
         <option value="$PROJECT_DIR$/build/dev-server.js" />
         <option value="$PROJECT_DIR$/src/page/visitor.vue" />
@@ -169,14 +172,15 @@
         <option value="$PROJECT_DIR$/src/page/manage/adminManage.vue" />
         <option value="$PROJECT_DIR$/src/page/manage/userManage.vue" />
         <option value="$PROJECT_DIR$/src/page/manage/shopManage.vue" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -332,12 +336,12 @@
       <workItem from="1549621424520" duration="3412000" />
       <workItem from="1549711629616" duration="5231000" />
       <workItem from="1549805037774" duration="3814000" />
-      <workItem from="1549853108412" duration="16667000" />
+      <workItem from="1549853108412" duration="18828000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66916000" />
+    <option name="totallyTimeSpent" value="69077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -392,14 +396,6 @@
     <entry file="file://$PROJECT_DIR$/src/api/table.js" />
     <entry file="file://$PROJECT_DIR$/src/config/mUtils.js" />
     <entry file="file://$PROJECT_DIR$/src/api/home.js" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/HeadTop.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -573,12 +569,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/manage/shopManage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+        <state relative-caret-position="-1557">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#el-autocomplete#0;n#el-form-item#1;n#el-form#0;n#el-dialog#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#6382#6428#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="210">
+            <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="70" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

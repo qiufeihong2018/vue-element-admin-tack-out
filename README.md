@@ -5,6 +5,11 @@
 ## Build Setup
 
 ``` bash
+
+
+# clone item
+git clone git@github.com:qiufeihong2018/vue-element-admin-tack-out.git
+
 # install dependencies
 npm install
 
