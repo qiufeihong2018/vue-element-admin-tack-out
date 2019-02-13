@@ -24,7 +24,7 @@
                     prop="registe_time"
                     label="注册日期"
                     sortable
-                    width="220">
+                    width="300">
                 </el-table-column>
                 <el-table-column
                     prop="city"
@@ -43,8 +43,7 @@
                 </el-table-column>
                 <el-table-column
                     prop="username"
-                    label="买家用户名"
-                    width="220">
+                    label="买家用户名">
                 </el-table-column>
             </el-table>
             <div class="Pagination">
