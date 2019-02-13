@@ -165,7 +165,8 @@
 
 <script>
     import HeadTop from '@/components/HeadTop'
-    import {cityGuess, addShop, searchplace, foodCategory} from '@/api/getData'
+    import * as apiShop from '@/api/shop'
+    import {addShop} from '@/api/getData'
     import {baseUrl, baseImgPath} from '@/config/env'
 
     export default {
@@ -241,8 +242,8 @@
         methods: {
             async initData() {
                 try {
-                    this.city = await cityGuess();
-                    const categories = await foodCategory();
+                    this.city = await apiShop.cityGuess();
+                    const categories = await apiShop.foodCategory();
                     categories.forEach(item => {
                         if (item.sub_categories.length) {
                             const addnew = {
@@ -270,7 +271,7 @@
             async querySearchAsync(queryString, cb) {
                 if (queryString) {
                     try {
-                        const cityList = await searchplace(this.city.id, queryString);
+                        const cityList = await apiShop.searchplace(this.city.id, queryString);
                         if (cityList instanceof Array) {
                             cityList.map(item => {
                                 item.value = item.address;
