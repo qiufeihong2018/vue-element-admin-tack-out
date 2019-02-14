@@ -485,7 +485,6 @@
         line-height: 120px;
         text-align: center;
     }
-
     .avatar {
         width: 120px;
         height: 120px;
