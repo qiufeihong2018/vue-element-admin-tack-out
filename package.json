@@ -8,6 +8,7 @@
     "dev": "cross-env NODE_ENV=online node build/dev-server.js",
     "local": "cross-env NODE_ENV=local node build/dev-server.js",
     "build": "node build/build.js",
+    "server": "npm run build && pm2 start tack-out.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
@@ -16,10 +17,13 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-preset-es2015": "^6.24.1",
     "echarts": "^3.8.5",
     "element-ui": "^1.2.9",
+    "flow-bin": "^0.93.0",
     "inmap": "^2.2.4",
     "js-cookie": "^2.2.0",
+    "pm2": "^3.3.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "time-formater": "^1.0.1",
@@ -100,7 +104,7 @@
     "webpack-merge": "^4.1.0"
   },
   "engines": {
-    "node": ">= 4.0.0",
+    "node": ">=6.0.0",
     "npm": ">= 3.0.0"
   },
   "browserslist": [

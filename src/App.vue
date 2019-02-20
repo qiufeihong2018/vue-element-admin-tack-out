@@ -1,12 +1,11 @@
 <template>
-    <div id="app" class="fillcontain">
+    <div id="tackOut" class="fillcontain">
 		    <router-view></router-view>
     </div>
 </template>
 
 <script>
     export default {
-    	
     }
 </script>
 

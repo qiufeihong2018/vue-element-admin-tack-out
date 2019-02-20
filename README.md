@@ -131,7 +131,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 │   │   ├── getters.js
 │   │   ├── index.js
 │   │   └── modules
-│   │       ├── app.js
+│   │       ├── tackOutk-out.js
 │   │       └── user.js
 │   └── utils
 │       ├── auth.js

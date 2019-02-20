@@ -151,6 +151,4 @@
 
         .all_head
             background #0214ff
-
-
 </style>
