@@ -158,3 +158,8 @@ npm run server
 
 ```
 ## main page
+### login
+![avatar](./shotPic/login.JPG)
+
+### home
+![avatar](./shotPic/home.JPG)
