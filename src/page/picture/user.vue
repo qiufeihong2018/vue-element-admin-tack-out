@@ -6,8 +6,8 @@
 </template>
 
 <script>
-    import HeadTop from '../components/HeadTop'
-    import UserPie from '../components/Charts/userPie'
+    import HeadTop from '../../components/HeadTop'
+    import UserPie from '../../components/Charts/userPie'
 
     export default {
         components: {
@@ -18,5 +18,5 @@
 </script>
 
 <style lang="less">
-    @import '../style/mixin';
+    @import '../../style/mixin';
 </style>

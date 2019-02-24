@@ -5,26 +5,45 @@
             <el-table
                 :data="tableData"
                 highlight-current-row
-                :default-sort="{prop:'registe_time',order:'desc'}"
-                style="width: 100%">
+                :default-sort="{prop:'registe_time',order:'desc'}">
                 <el-table-column
                     type="index"
                     width="100">
                 </el-table-column>
                 <el-table-column
-                    property="registe_time"
-                    label="注册日期"
-                    sortable
+                    prop="user_id"
+                    label="买家ID"
                     width="220">
                 </el-table-column>
                 <el-table-column
-                    property="username"
+                    prop="username"
                     label="买家姓名"
                     width="220">
                 </el-table-column>
                 <el-table-column
-                    property="city"
-                    label="注册地址">
+                    prop="registe_time"
+                    label="注册日期"
+                    sortable
+                    width="300">
+                </el-table-column>
+                <el-table-column
+                    prop="city"
+                    label="注册地址"
+                    width="220">
+                </el-table-column>
+                <el-table-column
+                    prop="balance"
+                    label="买家余额"
+                    width="220">
+                </el-table-column>
+                <el-table-column
+                    prop="email"
+                    label="买家邮箱"
+                    width="100">
+                </el-table-column>
+                <el-table-column
+                    prop="username"
+                    label="买家用户名">
                 </el-table-column>
             </el-table>
             <div class="Pagination">
@@ -32,8 +51,8 @@
                     @size-change="handleSizeChange"
                     @current-change="handleCurrentChange"
                     :current-page="currentPage"
-                    :page-sizes="[10,50,100,200]"
-                    :page-size="10"
+                    :page-sizes="[20,50,100,200]"
+                    :page-size="20"
                     layout="total,sizes, prev, pager, next,jumper"
                     :total="count">
                 </el-pagination>
@@ -43,7 +62,7 @@
 </template>
 
 <script>
-    import HeadTop from '../components/HeadTop'
+    import HeadTop from '../../components/HeadTop'
     import * as apiUser from '@/api/user'
 
     export default {
@@ -51,7 +70,7 @@
             return {
                 tableData: [],
                 offset: 0,
-                limit: 10,
+                limit: 20,
                 count: 0,
                 currentPage: 1,
             }
@@ -66,7 +85,7 @@
             async initData() {
                 try {
                     const countData = await apiUser.getUserCount();
-                    if (countData.status ==1) {
+                    if (countData.status == 1) {
                         this.count = countData.count;
                     } else {
                         throw new Error('获取数据失败');
@@ -76,6 +95,10 @@
                     console.log('获取数据失败', err);
                 }
             },
+            async getUsers() {
+                const Users = await apiUser.getUserList({offset: this.offset, limit: this.limit});
+                this.tableData = Users
+            },
             handleSizeChange(val) {
                 // 每页条数
                 this.limit = val
@@ -84,35 +107,16 @@
             handleCurrentChange(val) {
                 // 当前页
                 this.currentPage = val;
-                // 之前页的条数
+                // 开始条数
                 this.offset = (val - 1) * this.limit;
                 this.getUsers()
-            },
-            async getUsers() {
-                const Users = await apiUser.getUserList({offset: this.offset, limit: this.limit});
-                // 先清空
-                this.tableData = []
-                Users.forEach(item => {
-                    const tableData = {};
-                    tableData.username = item.username;
-                    tableData.registe_time = item.registe_time;
-                    tableData.city = item.city;
-                    this.tableData.push(tableData);
-                })
             }
-        },
+        }
     }
 </script>
 
 <style lang="less">
-    @import '../style/mixin';
+    @import '../../style/mixin';
 
-    .table_container {
-        padding: 20px;
-        .Pagination {
-            text-align: right;
-            margin-top: 10px;
-        }
-    }
 </style>
 

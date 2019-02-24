@@ -2,12 +2,12 @@
 var path = require('path')
 
 module.exports = {
-  build: {
-    env: require('./prod.env'),
-    index: path.resolve(__dirname, '../dist/index.html'),
-    assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'static',
-    assetsPublicPath: '/dist/',
+  build: { //production
+    env: require('./prod.env'),//使用config/prod.env.js中定义的编译环境
+    index: path.resolve(__dirname, '../dist/index.html'),//编译输入的index.html文件
+    assetsRoot: path.resolve(__dirname, '../dist'),//编译输出的静态资源路径
+    assetsSubDirectory: 'static',//编译输出的二级目录
+    assetsPublicPath: '/',//编译发布的根目录,可配置为资源服务器域名或cdn域名
     productionSourceMap: false,
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.

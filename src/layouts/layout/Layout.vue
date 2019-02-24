@@ -1,10 +1,10 @@
 <template>
-  <div :class="classObj" class="app-wrapper">
+  <div :class="classObj" class="tackOut-wrapper">
     <div v-if="device==='mobile'&&sidebar.opened" class="drawer-bg" @click="handleClickOutside"/>
     <sidebar class="sidebar-container"/>
     <div class="main-container">
       <navbar/>
-      <app-main/>
+      <tackOut-main/>
     </div>
   </div>
 </template>
@@ -23,10 +23,10 @@ export default {
   mixins: [ResizeMixin],
   computed: {
     sidebar() {
-      return this.$store.state.app.sidebar
+      return this.$store.state.tackOut.sidebar
     },
     device() {
-      return this.$store.state.app.device
+      return this.$store.state.tackOut.device
     },
     classObj() {
       return {
@@ -49,7 +49,7 @@ export default {
   @import "../../common/stylus/mixin"
   @import "../../common/stylus/variable"
   @import "../../common/stylus/sidebar"
-  .app-wrapper
+  .tackOut-wrapper
     @include clearfix;
     position: relative;
     height: 100%;

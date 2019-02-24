@@ -7,7 +7,7 @@
 
 <script>
     import inMap from "inmap"
-    import data from "../../static/point";
+    import data from "../../../static/point";
     import HeadTop from '@/components/HeadTop'
 
     export default {
@@ -50,7 +50,7 @@
 </script>
 
 <style lang="less">
-    @import '../style/mixin';
+    @import '../../style/mixin';
 
 
 </style>

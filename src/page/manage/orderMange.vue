@@ -7,7 +7,7 @@
                 @expand='expand'
                 :expand-row-keys='expendRow'
                 :row-key="row => row.index"
-                style="width: 100%">
+                :default-sort="{prop:'total_amount',rating:'desc'}">
                 <el-table-column type="expand">
                     <template slot-scope="props">
                         <el-form label-position="left" inline class="demo-table-expand">
@@ -35,20 +35,22 @@
                 </el-table-column>
                 <el-table-column
                     label="总价格"
-                    prop="total_amount">
+                    prop="total_amount"
+                    sortable>
                 </el-table-column>
                 <el-table-column
                     label="订单状态"
                     prop="status">
                 </el-table-column>
             </el-table>
-            <div class="Pagination" style="text-align: left;margin-top: 10px;">
+            <div class="Pagination">
                 <el-pagination
                     @size-change="handleSizeChange"
                     @current-change="handleCurrentChange"
                     :current-page="currentPage"
                     :page-size="20"
-                    layout="total, prev, pager, next"
+                    :page-sizes="[20,50,100,200]"
+                    layout="total,sizes, prev, pager, next,jumper"
                     :total="count">
                 </el-pagination>
             </div>
@@ -57,7 +59,7 @@
 </template>
 
 <script>
-    import HeadTop from '../components/HeadTop'
+    import HeadTop from '../../components/HeadTop'
     import {getOrderCount} from '@/api/home'
     import {getOrderList, getResturantDetail, getUserInfo, getAddressById} from '@/api/getData'
 
@@ -99,7 +101,8 @@
                 }
             },
             handleSizeChange(val) {
-                console.log(`每页 ${val} 条`);
+                this.limit = val
+                this.getOrders()
             },
             handleCurrentChange(val) {
                 this.currentPage = val;
@@ -152,11 +155,7 @@
 </script>
 
 <style lang="less">
-    @import '../style/mixin';
-
-    .table_container {
-        padding: 20px;
-    }
+    @import '../../style/mixin';
 
     .demo-table-expand {
         font-size: 0;
