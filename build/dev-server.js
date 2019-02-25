@@ -1,9 +1,8 @@
 require('./check-versions')()
 
 var config = require('../config')
-if (!process.env.NODE_ENV) {
-  process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
-}
+if (!process.env.NODE_ENV) process.env.NODE_ENV = JSON.parse(config.dev.env.NODE_ENV)
+
 
 var opn = require('opn')
 var path = require('path')
@@ -31,12 +30,13 @@ var devMiddleware = require('webpack-dev-middleware')(compiler, {
 })
 
 var hotMiddleware = require('webpack-hot-middleware')(compiler, {
-  log: () => {}
+  log: () => {
+  }
 })
 // force page reload when html-webpack-plugin template changes
 compiler.plugin('compilation', function (compilation) {
   compilation.plugin('html-webpack-plugin-after-emit', function (data, cb) {
-    hotMiddleware.publish({ action: 'reload' })
+    hotMiddleware.publish({action: 'reload'})
     cb()
   })
 })
@@ -52,16 +52,20 @@ compiler.plugin('compilation', function (compilation) {
 
 var context = config.dev.context
 
-switch(process.env.NODE_ENV){
-    case 'local': var proxypath = 'http://localhost:7979'; break;
-    case 'online': var proxypath = 'http://106.14.169.12:7979/'; break;
+switch (process.env.NODE_ENV) {
+  case 'local':
+    var proxypath = 'http://106.14.169.12:7979';
+    break;
+  case 'online':
+    var proxypath = 'http://106.14.169.12:7979/';
+    break;
 }
 var options = {
-    target: proxypath,
-    changeOrigin: true,
+  target: proxypath,
+  changeOrigin: true,
 }
 if (context.length) {
-    app.use(proxyMiddleware(context, options))
+  app.use(proxyMiddleware(context, options))
 }
 // handle fallback for HTML5 history API
 app.use(require('connect-history-api-fallback')())
@@ -77,7 +81,7 @@ app.use(hotMiddleware)
 var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))
 
-var uri = 'http://localhost:' + port
+var uri = 'http://106.14.169.12:' + port
 
 var _resolve
 var readyPromise = new Promise(resolve => {
