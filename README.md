@@ -1,4 +1,4 @@
-# vue-element-admin-tack-out
+# About
 
 > a vue+element back-stage management template back-stage management  menagement 
 
@@ -17,9 +17,10 @@ npm run dev
 # build for production with minification
 npm run build
 
-```
+# pm2 
+npm run server
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+```
 
 ## directory
 ```
@@ -157,3 +158,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ```
 ## main page
+### login
+![avatar](./shotPic/login.JPG)
+
+### home
+![avatar](./shotPic/home.JPG)
