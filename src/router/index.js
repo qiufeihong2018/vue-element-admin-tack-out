@@ -66,11 +66,7 @@ const routes = [
         }, {
             path: '/user',
             component: user,
-            meta: ['图表', '用户分布'],
-        }, {
-            path: '/map',
-            component: map,
-            meta: ['图表', '地图']
+            meta: ['图表', '买家分布'],
         }, {
             path: '/merchants',
             component: merchants,

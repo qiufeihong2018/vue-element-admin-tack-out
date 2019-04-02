@@ -13,7 +13,7 @@ export const userCount = date => fetch('/statis/user/' + date + '/count');
 export const getUserCount = data => fetch('/v1/users/count', data);
 
 /**
- * 获取用户列表
+ * 获取买家列表
  */
 
 export const getUserList = data => fetch('/v1/users/list', data);

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <HeadTop></HeadTop>
+        <HeadTop/>
         <div class="maintain-class">
             <el-card>
                 <div slot="header">

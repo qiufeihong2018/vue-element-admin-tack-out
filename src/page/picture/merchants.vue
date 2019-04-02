@@ -1,6 +1,6 @@
 <template>
     <div>
-        <HeadTop></HeadTop>
+        <HeadTop/>
         <MerchantsPie></MerchantsPie>
     </div>
 </template>

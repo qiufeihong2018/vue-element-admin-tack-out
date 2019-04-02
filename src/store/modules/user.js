@@ -40,7 +40,7 @@ const user = {
       })
     },
 
-    // 获取用户信息
+    // 获取买家信息
     GetInfo({ commit, state }) {
       return new Promise((resolve, reject) => {
           apiLogin.getInfo(state.token).then((response) => {

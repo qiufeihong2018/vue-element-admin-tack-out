@@ -1,6 +1,6 @@
 <template>
     <div>
-        <HeadTop></HeadTop>
+        <HeadTop/>
         <el-form label-position="left" :model="formData" :rules="rules" ref="formData" label-width="200px"
                  class="demo-formData">
             <el-form-item label="卖家名称" prop="name">
@@ -19,25 +19,25 @@
             <el-form-item label="联系电话" prop="phone">
                 <el-input v-model.number="formData.phone" maxLength="11"></el-input>
             </el-form-item>
-            <el-form-item label="店铺简介" prop="description">
+            <el-form-item label="卖家简介" prop="description">
                 <el-input v-model="formData.description"></el-input>
             </el-form-item>
-            <el-form-item label="店铺标语" prop="promotion_info">
+            <el-form-item label="卖家标语" prop="promotion_info">
                 <el-input v-model="formData.promotion_info"></el-input>
             </el-form-item>
-            <el-form-item label="店铺分类">
+            <el-form-item label="卖家分类">
                 <el-cascader
                     :options="categoryOptions"
                     v-model="selectedCategory"
                     change-on-select
                 ></el-cascader>
             </el-form-item>
-            <el-form-item label="店铺特点" style="white-space: nowrap;">
+            <el-form-item label="卖家特点" style="white-space: nowrap;">
                 <span>品牌保证</span>
                 <el-switch on-text="" off-text="" v-model="formData.is_premium"></el-switch>
                 <span>蜂鸟专送</span>
                 <el-switch on-text="" off-text="" v-model="formData.delivery_mode"></el-switch>
-                <span>新开店铺</span>
+                <span>新开卖家</span>
                 <el-switch on-text="" off-text="" v-model="formData.new"></el-switch>
             </el-form-item>
             <el-form-item style="white-space: nowrap;">
@@ -77,7 +77,7 @@
                 </el-time-select>
             </el-form-item>
 
-            <el-form-item label="上传店铺头像">
+            <el-form-item label="上传卖家头像">
                 <el-upload
                     class="avatar-uploader"
                     :action="baseUrl + '/v1/addimg/shop'"
@@ -174,7 +174,7 @@
             return {
                 city: {},
                 formData: {
-                    name: '', //店铺名称
+                    name: '', //卖家名称
                     address: '', //地址
                     latitude: '',
                     longitude: '',
@@ -198,7 +198,7 @@
                 },
                 rules: {
                     name: [
-                        {required: true, message: '请输入店铺名称', trigger: 'blur'},
+                        {required: true, message: '请输入卖家名称', trigger: 'blur'},
                     ],
                     address: [
                         {required: true, message: '请输入详细地址', trigger: 'blur'}
@@ -215,8 +215,8 @@
                     value: '优惠大酬宾',
                     label: '优惠大酬宾'
                 }, {
-                    value: '新用户立减',
-                    label: '新用户立减'
+                    value: '新买家立减',
+                    label: '新买家立减'
                 }, {
                     value: '进店领券',
                     label: '进店领券'
@@ -358,10 +358,10 @@
                                 description: value,
                             }
                             break;
-                        case '新用户立减':
+                        case '新买家立减':
                             newObj = {
                                 icon_name: '新',
-                                name: '新用户立减',
+                                name: '新买家立减',
                                 description: value,
                             }
                             break;
@@ -398,7 +398,7 @@
                                     message: '添加成功'
                                 });
                                 this.formData = {
-                                    name: '', //店铺名称
+                                    name: '', //卖家名称
                                     address: '', //地址
                                     latitude: '',
                                     longitude: '',

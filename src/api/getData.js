@@ -13,7 +13,7 @@ export const login = data => fetch('/admin/login', data, 'POST');
 export const signout = () => fetch('/admin/signout');
 
 /**
- * 获取用户信息
+ * 获取买家信息
  */
 
 export const getAdminInfo = () => fetch('/admin/info');
@@ -51,7 +51,7 @@ export const adminManage = data => fetch('/admin/all', data);
 export const addShop = data => fetch('/shopping/addShop', data, 'POST');
 
 /**
- * 获取当前店铺食品种类
+ * 获取当前卖家食品种类
  */
 
 export const getCategory = restaurant_id => fetch('/shopping/getcategory/' + restaurant_id);
@@ -121,7 +121,7 @@ export const getOrderList = data => fetch('/bos/orders', data);
 
 
 /**
- * 获取用户信息
+ * 获取买家信息
  */
 
 export const getUserInfo = user_id => fetch('/v1/user/' + user_id);

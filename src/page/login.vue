@@ -7,7 +7,7 @@
 		  		</div>
 		    	<el-form :model="loginForm" :rules="rules" ref="loginForm">
 					<el-form-item prop="username">
-						<el-input v-model="loginForm.username" placeholder="用户名"></el-input>
+						<el-input v-model="loginForm.username" placeholder="买家名"></el-input>
 					</el-form-item>
 					<el-form-item prop="password">
 						<el-input type="password" placeholder="密码" v-model="loginForm.password"></el-input>
@@ -17,8 +17,8 @@
 				  	</el-form-item>
 				</el-form>
 				<p class="tip">温馨提示：</p>
-				<p class="tip">未登录过的新用户，自动注册</p>
-				<p class="tip">注册过的用户可凭账号密码登录</p>
+				<p class="tip">未登录过的新买家，自动注册</p>
+				<p class="tip">注册过的买家可凭账号密码登录</p>
 	  		</section>
 	  	</transition>
   	</div>
@@ -37,7 +37,7 @@
 				},
 				rules: {
 					username: [
-			            { required: true, message: '请输入用户名', trigger: 'blur' },
+			            { required: true, message: '请输入买家名', trigger: 'blur' },
 			        ],
 					password: [
 						{ required: true, message: '请输入密码', trigger: 'blur' }
@@ -76,7 +76,7 @@
 					} else {
 						this.$notify.error({
 							title: '错误',
-							message: '请输入正确的用户名密码',
+							message: '请输入正确的买家名密码',
 							offset: 100
 						});
 						return false;
