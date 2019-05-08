@@ -8,7 +8,7 @@
     "dev": "cross-env NODE_ENV=online node build/dev-server.js",
     "local": "cross-env NODE_ENV=local node build/dev-server.js",
     "build": "node build/build.js",
-    "pm2": "pm2 start tack-out.js",
+    "pm2": "pm2 start app.js --name='tack-out'",
     "server": "npm run build && pm2 start tack-out.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
