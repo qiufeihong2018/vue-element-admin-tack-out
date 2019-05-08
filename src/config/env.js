@@ -17,7 +17,7 @@ if (process.env.NODE_ENV == 'development') {
     baseUrl = 'http://express-mongodb-tack-out.qiufeihong.top';
     baseImgPath = 'http://express-mongodb-tack-out.qiufeihong.top/img/';
 }
-console.log('baseUrl',baseUrl,'baseImgPath',baseImgPath)
+
 export {
 	baseUrl,
 	routerMode,

@@ -78,11 +78,11 @@ app.use(devMiddleware)
 app.use(hotMiddleware)
 
 // serve pure static assets
-var staticPath = path.posiqiufeihong.topx.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
+var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)//提供config的路径
 app.use(staticPath, express.static('./static'))
-
+var uri = 'http://localhost:' + port
 // var uri = 'http://106.14.169.12:' + port
-var uri = 'http://tack-out.qiufeihong.top'
+// var uri = 'http://tack-out.qiufeihong.top'
 
 var _resolve
 var readyPromise = new Promise(resolve => {
