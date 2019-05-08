@@ -54,7 +54,7 @@ var context = config.dev.context
 console.log('process.env.NODE_ENV',process.env.NODE_ENV)
 switch (process.env.NODE_ENV) {
   case 'local':
-    var proxypath = 'http://localhost:7979';
+    var proxypath = 'http://express-mongodb-tack-out.qiufeihong.top';
     break;
   case 'online':
     var proxypath = 'http://express-mongodb-tack-out.qiufeihong.top';
@@ -78,7 +78,7 @@ app.use(devMiddleware)
 app.use(hotMiddleware)
 
 // serve pure static assets
-var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
+var staticPath = path.posiqiufeihong.topx.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))
 
 // var uri = 'http://106.14.169.12:' + port
