@@ -51,13 +51,13 @@ compiler.plugin('compilation', function (compilation) {
 // })
 
 var context = config.dev.context
-
+console.log('process.env.NODE_ENV',process.env.NODE_ENV)
 switch (process.env.NODE_ENV) {
   case 'local':
-    var proxypath = 'http://106.14.169.12:7979';
+    var proxypath = 'http://localhost:7979';
     break;
   case 'online':
-    var proxypath = 'http://106.14.169.12:7979/';
+    var proxypath = 'http://express-mongodb-tack-out.qiufeihong.top';
     break;
 }
 var options = {
@@ -81,7 +81,8 @@ app.use(hotMiddleware)
 var staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))
 
-var uri = 'http://106.14.169.12:' + port
+// var uri = 'http://106.14.169.12:' + port
+var uri = 'http://tack-out.qiufeihong.top'
 
 var _resolve
 var readyPromise = new Promise(resolve => {

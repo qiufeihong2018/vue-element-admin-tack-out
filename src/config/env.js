@@ -14,10 +14,10 @@ if (process.env.NODE_ENV == 'development') {
 	baseUrl = '';
     baseImgPath = '/img/';
 }else{
-    baseUrl = '//106.14.169.12:7979';
-    baseImgPath = '//106.14.169.12:7979/img/';
+    baseUrl = 'http://express-mongodb-tack-out.qiufeihong.top';
+    baseImgPath = 'http://express-mongodb-tack-out.qiufeihong.top/img/';
 }
-
+console.log('baseUrl',baseUrl,'baseImgPath',baseImgPath)
 export {
 	baseUrl,
 	routerMode,

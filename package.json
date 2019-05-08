@@ -14,7 +14,7 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js --ext .jsx --ext .vue src/",
-    "lint-fix": "eslint --fix --ext .js --ext .jsx --ext .vue src/"
+    "fix": "eslint --fix --ext .js --ext .jsx --ext .vue src/"
   },
   "dependencies": {
     "axios": "^0.18.0",
