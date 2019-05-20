@@ -5,61 +5,68 @@
         <li v-for="n in 15" :key="n"></li>
       </ul>
     </div>
-    <div class="page-login-layer page-login-layer-time" flex="main:center cross:center">
+    <div class="page-login-layer page-login-layer-time" flex="main:center">
       {{time}}
     </div>
     <div class="page-login-layer">
       <div class="page-login-content" flex="dir:top main:justify cross:center box:justify">
-        <div class="page-login-content-header">
-          <p class="page-login-content-header-motto">
-            I can accept failure, but I can't acceptnot trying. <span>—— by Michael Jordan</span>
-          </p>
-        </div>
         <div class="page-login-content-main" flex="dir:top main:center cross:center">
           <!--表单-->
           <div class="page-login-form">
             <el-card shadow="nerver">
-              <el-form ref="loginForm" label-position="top" :rules="rules">
+              <el-form ref="loginForm" label-position="top" :rules="rules" :model="formLogin" size="default">
                 <el-form-item prop="username">
-                  <el-input type="text" placeholder="用户名">
+                  <el-input type="text" v-model="formLogin.username" placeholder="用户名">
                     <i slot="prepend" class="el-icon-user-solid" />
                   </el-input>
                 </el-form-item>
                 <el-form-item prop="password">
-                  <el-input type="password" placeholder="密码">
-                    <i slot="prepend" class="fa fa-user-cicle-o"></i></el-input>
+                  <el-input type="password" v-model="formLogin.password" placeholder="密码">
+                    <i slot="prepend" class="el-icon-collection" /></el-input>
                 </el-form-item>
+                <el-form-item prop="code">
+                  <el-input type="text" v-model="formLogin.code" placeholder="- - - -">
+                    <template slot="prepend">验证码</template>
+                    <template slot="append">
+                      <img class="login-code" src="./image/login-code.png"></img>
+                    </template>
+                  </el-input>
+                </el-form-item>
+                <el-button @click="submitForm('loginForm')" type="primary" class="button-login">登录</el-button>
               </el-form>
             </el-card>
+            <p class="page-login-options" flex="main:justify cross:center">
+              <span>忘记密码</span>
+              <span>注册用户</span>
+            </p>
+            <el-button class="page-login-quick" size="default" type="info" @click="dialogVisible=true">
+              快速选择用户（测试功能）
+            </el-button>
           </div>
+        </div>
+        <div class="page-login-content-footer">
+          <p class="page-login-content-footer-options">
+            <a href="#">帮助</a>
+            <a href="#">隐私</a>
+            <a href="#">条款</a>
+          </p>
+          <p class="page-login-content-footer-copyright">
+            Copyright 2019 www.qiufeihong.top出品
+            <a href="https://github.com/qiufeihong2018">@qiufeihong</a>
+          </p>
         </div>
       </div>
     </div>
+    <el-dialog title="快速选择用户" :visible.sync="dialogVisible" width="400px">
+      <el-row :gutter="10" style="margin:-20px 0 -10px 0">
+        <el-col v-for="(user,index) in users" :key="index" :span="8">
+          <div class="page-login-quick-user" @click="handleUserBtnClick(user)">
+            <span>{{user.name}}</span>
+          </div>
+        </el-col>
+      </el-row>
+    </el-dialog>
   </div>
-  <!--- 	<div class="login_page fillcontain">
-	  	<transition name="form-fade" mode="in-out">
-	  		<section class="form_contianer" v-show="showLogin">
-		  		<div class="manage_tip">
-		  			<p>试试水外卖后台管理系统</p>
-		  		</div>
-		    	<el-form :model="loginForm" :rules="rules" ref="loginForm">
-					<el-form-item prop="username">
-						<el-input v-model="loginForm.username" placeholder="用户名"></el-input>
-					</el-form-item>
-					<el-form-item prop="password">
-						<el-input type="password" placeholder="密码" v-model="loginForm.password"></el-input>
-					</el-form-item>
-					<el-form-item>
-				    	<el-button type="primary" @click="submitForm('loginForm')" class="submit_btn">登陆</el-button>
-				  	</el-form-item>
-				</el-form>
-				<p class="tip">温馨提示：</p>
-				<p class="tip">未登录过的新用户，自动注册</p>
-				<p class="tip">注册过的用户可凭账号密码登录</p>
-	  		</section>
-	  	</transition>
-  	</div>
--->
 </template>
 
 <script>
@@ -76,10 +83,30 @@
   export default {
     data() {
       return {
-        loginForm: {
-          username: '',
-          password: '',
+        timeInterval: '',
+        time: dayjs().format('HH:mm:ss'),
+        // 快速选择用户
+        dialogVisible: false,
+        users: [{
+          name: '管理员',
+          username: 'admin',
+          password: 'admin'
+        }, {
+          name: '编辑',
+          username: 'editor',
+          password: 'editor'
+        }, {
+          name: '用户1',
+          username: 'user1',
+          password: 'user1'
+        }],
+        // 表单
+        formLogin: {
+          username: 'admin',
+          password: 'admin',
+          code: 'v9am'
         },
+        // 校验
         rules: {
           username: [{
             required: true,
@@ -91,28 +118,43 @@
             message: '请输入密码',
             trigger: 'blur'
           }],
+          code: [{
+            required: true,
+            message: '请输入验证码',
+            trigger: 'blur'
+          }]
         },
-        showLogin: false,
-        time: dayjs().format('HH:mm:ss')
       }
     },
     mounted() {
-      this.showLogin = true;
-      if (!this.adminInfo.id) {
-        this.getAdminData()
-      }
+      this.timeInterval = setInterval(() => {
+        this.refreshTime()
+      }, 1000)
     },
-    computed: {
-      ...mapState(['adminInfo']),
+    beforeDestroy() {
+      clearInterval(this.timeInterval)
     },
+    // computed: {
+    //   ...mapState(['adminInfo']),
+    // },
     methods: {
+      fond(){
+        console.log('dfasdf')
+      },
       ...mapActions(['getAdminData']),
+      refreshTime() {
+        this.time = dayjs().format('HH:mm:ss')
+      },
+        /**
+       * @description 提交表单
+       */
+    // 提交登录信息
       async submitForm(formName) {
         this.$refs[formName].validate(async (valid) => {
           if (valid) {
             const res = await login({
-              user_name: this.loginForm.username,
-              password: this.loginForm.password
+              user_name: this.formLogin.username,
+              password: this.formLogin.password
             })
             if (res.status == 1) {
               this.$message({
@@ -137,36 +179,106 @@
         });
       },
     },
-    watch: {
-      adminInfo: function (newValue) {
-        if (newValue.id) {
-          this.$message({
-            type: 'success',
-            message: '检测到您之前登录过，将自动登录'
-          });
-          this.$router.push('manage')
-        }
-      }
-    }
+    // watch: {
+    //   adminInfo: function (newValue) {
+    //     if (newValue.id) {
+    //       this.$message({
+    //         type: 'success',
+    //         message: '检测到您之前登录过，将自动登录'
+    //       });
+    //       this.$router.push('manage')
+    //     }
+    //   }
+    // }
   }
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
   .page-login {
-    @extend .unable-select;
-    // $backgroundColor:#F0F2F5;
-    // ---
+    // 模板
     background-color: #000000;
-    height: 100%;
     position: relative;
+    height: 100%;
 
-    // 层
-    .page-login-layer {
-      @extend .full overflow:auto;
+    //时间
+    .page-login-layer-time {
+      font-size: 25em;
+      font-weight: bold;
+      color: #fff;
+      overflow: hidden;
     }
 
-    .page-login-layer-area {
-      overflow: hidden
+    //登录页面控件容器
+    .page-login-content {
+      height: 100%;
+      min-height: 500px;
+    }
+
+    // 登录表单
+    .page-login-form {
+      width: 400px;
+
+      .el-card {
+        margin-bottom: 20px
+      }
+
+      // 输入框左边的图表区域放大
+      .el-input-group__prepend {
+        padding: 0 30px;
+      }
+
+      // 验证码图片
+      .login-code {
+        height: 50px;
+      }
+
+      // 登录按钮
+      .button-login {
+        width: 100%
+      }
+
+      // 登录选项
+      .page-login-options {
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 15px;
+        font-weight: bold
+      }
+
+      //快速选择用户
+      .page-login-quick {
+        width: 100%
+      }
+
+      // 输入框都变高
+      .el-input__inner {
+        height: 56px
+      }
+    }
+
+    // footer
+    .page-login-content-footer {
+      color: #fff;
+      padding: 1em 0;
+      position: fixed;
+      bottom: 0;
+
+
+      .page-login-content-footer-options {
+        margin: 10px;
+        font-size: 14px;
+        text-align: center;
+
+        a {
+          margin: 0 2.5em
+        }
+      }
+
+      .page-login-content-footer-copyright {
+        margin: 10px;
+        font-size: 12px;
+        text-align: center;
+      }
     }
 
     // 背景
@@ -320,69 +432,5 @@
         }
       }
     }
-
-    //时间
-    .page-login-layer-time {
-      font-size: 35em;
-      font-weight: bold;
-      color: #fff;
-      overflow: hidden;
-    }
-
-    //登录页面控件容器
-    .page-login-content {
-      height: 100%;
-      min-height: 500px;
-    }
-
-    //header
-    .page-login-content-header {
-      padding: 1em 0;
-
-      .page-login-content-header-motto {
-        color: #fff;
-        font-size: 12px;
-
-        span {
-          color: #fff;
-        }
-      }
-    }
   }
-
-
-  // @import '../style/mixin';
-  // .manage_tip{
-  // 	position: absolute;
-  // 	width: 100%;
-  // 	top: -100px;
-  // 	left: 0;
-  // 	p{
-  // 		font-size: 34px;
-  // 		color: #fff;
-  // 	}
-  // }
-  // .form_contianer{
-  // 	.wh(320px, 210px);
-  // 	.ctp(320px, 210px);
-  // 	padding: 25px;
-  // 	border-radius: 5px;
-  // 	text-align: center;
-  // 	background-color: #fff;
-  // 	.submit_btn{
-  // 		width: 100%;
-  // 		font-size: 16px;
-  // 	}
-  // }
-  // .tip{
-  // 	font-size: 12px;
-  // 	color: red;
-  // }
-  // .form-fade-enter-active, .form-fade-leave-active {
-  //   	transition: all 1s;
-  // }
-  // .form-fade-enter, .form-fade-leave-active {
-  //   	transform: translate3d(0, -50px, 0);
-  //   	opacity: 0;
-  // }
 </style>
