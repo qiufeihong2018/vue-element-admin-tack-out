@@ -9,7 +9,7 @@
       {{time}}
     </div>
     <div class="page-login-layer">
-      <div class="page-login-content" flex="dir:top main:justify cross:center box:justify">
+      <div class="page-login-content" flex="main:center cross:center">
         <div class="page-login-content-main" flex="dir:top main:center cross:center">
           <!--表单-->
           <div class="page-login-form">
@@ -138,17 +138,17 @@
     //   ...mapState(['adminInfo']),
     // },
     methods: {
-      fond(){
+      fond() {
         console.log('dfasdf')
       },
       ...mapActions(['getAdminData']),
       refreshTime() {
         this.time = dayjs().format('HH:mm:ss')
       },
-        /**
+      /**
        * @description 提交表单
        */
-    // 提交登录信息
+      // 提交登录信息
       async submitForm(formName) {
         this.$refs[formName].validate(async (valid) => {
           if (valid) {
@@ -195,10 +195,23 @@
 
 <style lang="less">
   .page-login {
+    // 禁止用户选中
+    user-select: none;
+    cursor: pointer;
     // 模板
     background-color: #000000;
     position: relative;
     height: 100%;
+
+    // 层
+    .page-login-layer {
+      overflow: auto;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+    }
 
     //时间
     .page-login-layer-time {
@@ -247,7 +260,8 @@
 
       //快速选择用户
       .page-login-quick {
-        width: 100%
+        width: 100%;
+        z-index: 10
       }
 
       // 输入框都变高
