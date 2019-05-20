@@ -274,8 +274,8 @@
     .page-login-content-footer {
       color: #fff;
       padding: 1em 0;
-      position: fixed;
-      bottom: 0;
+      position: absolute;
+      bottom: 10px;
 
 
       .page-login-content-footer-options {
